@@ -1,0 +1,78 @@
+body{
+	margin: 0px;
+	font-family: roboto;
+	background-image: url("Background samping.png");
+	background-repeat: no-repeat;
+	background-position: top right;
+	background-size: 65%;
+}
+
+div{
+	display: inline-block;
+}
+
+.namaweb {
+	font-size: 50px;
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-right: 400px;
+	color: #050766; 
+}
+
+.menu{
+	margin: 15px 10px 0px 0px;
+	float: right;
+}
+
+.menu ul{
+	display: block;
+	margin: 0px;
+	padding-left: 0px;
+}
+
+.menu ul li{
+	margin: 0px;
+	list-style-type: none;
+	display: inline-block;
+	padding-left: 10px;
+}
+
+.menu a{
+	display: block;
+	text-decoration: none;
+	color: #ffffff;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+.content {
+	display: inline-block;
+	color: #001460;
+	margin-top: 120px;
+	margin-left: 80px;
+	width: 300px;
+}
+
+.content a{
+	width: 110px;
+	padding: 10px 12px;
+	color: #ffffff;
+	text-align: left;
+	text-decoration: none;
+	background-color: #001460;
+	border-radius: 5px;
+}
+
+a:hover{
+	color: #050766;
+	font-weight: bold;
+	background-color: #ffffff;
+}
+
+
+.gambar{
+	display: inline-block;
+	margin-top: 60px;
+	margin-right: 280px; 
+	float: right;
+}
