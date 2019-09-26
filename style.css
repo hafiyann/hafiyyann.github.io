@@ -1,7 +1,7 @@
 body{
 	margin: 0px;
 	font-family: roboto;
-	background-image: url("hafiyyann.github.io/SOURCE/Background samping.png");
+	background-image: url("Background samping.png");
 	background-repeat: no-repeat;
 	background-position: top right;
 	background-size: 65%;
@@ -47,13 +47,17 @@ div{
 
 .content {
 	display: inline-block;
+	width: 400px;
+	margin: 80px 0px 0px 40px;
+	background-color: #e6e7eb;
 	color: #001460;
-	margin-top: 120px;
-	margin-left: 80px;
-	width: 300px;
+	padding: 10px;
+	border-left: 6px solid #001460;
+	border-radius: 0px 10px 10px 0px;
 }
 
 .content a{
+	display: block;
 	width: 110px;
 	padding: 10px 12px;
 	color: #ffffff;
@@ -63,16 +67,50 @@ div{
 	border-radius: 5px;
 }
 
+.content input[type=text], textarea{
+	font-family: roboto;
+	width: 300px;
+	margin-top: 5px;
+	border-radius: 10px;
+	padding: 10px;
+	border: 0px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.content input[type=button]{
+	width:100px;
+	color: white;
+	background-color: #001460;
+	margin-top: 10px;
+	padding: 5px;
+	border-radius: 5px;
+	border: 0px;
+}
+
 a:hover{
 	color: #050766;
 	font-weight: bold;
 	background-color: #ffffff;
 }
 
+input[type=button]:hover{
+	color: #050766;
+	cursor: pointer;
+	font-weight: bold;
+	background-color: #ffffff;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 
 .gambar{
 	display: inline-block;
 	margin-top: 60px;
-	margin-right: 280px; 
+	margin-right: 200px; 
+	float: right;
+}
+
+.gambar1{
+	display: inline-block;
+	margin-top: 100px;
+	margin-right: 150px; 
 	float: right;
 }
