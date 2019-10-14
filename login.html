@@ -19,13 +19,35 @@
                 <div class="container2a">
                     <h1><b>MASUK</b> SISWA</h1>
                     <hr>
-                    <input type="text" placeholder="Masukkan Username.....">
-                    <input type="text" placeholder="Masukkan Password....."><br><br>
-                    <input type="button" value="Lupa Password" class="password">
-                    <input type="button" value="Masuk">
+                    <form name="myForm">
+                        <input type="text" name="username" placeholder="Masukkan Username.....">
+                        <input type="text" placeholder="Masukkan Password....."><br><br>
+                        <input type="button" value="Lupa Password" class="password">
+                        <input type="button" value="Masuk">    
+                    </form>
                 </div>
             </div>
 
         </form>
 </body>
+<script type = "text/javascript">
+   <!--
+      // Form validation code will come here.
+      function validate() {
+      
+         if( document.myForm.username.value == "" ) {
+            alert( "Please provide your name!" );
+            document.myForm.Name.focus() ;
+            return false;
+         }
+
+         // if( document.myForm.username.value == "" ) {
+         //    alert( "Please provide your name!" );
+         //    document.myForm.Name.focus() ;
+         //    return false;
+         // }
+         return( true );
+      }
+   //-->
+</script>
 </html>
