@@ -1,6 +1,6 @@
 body{
 	margin: 0px;
-	font-family: roboto;
+	font-family: roboto, sans-serif;
 	background-image: url("SOURCE/Background samping.png");
 	background-repeat: no-repeat;
 	background-position: top right;
