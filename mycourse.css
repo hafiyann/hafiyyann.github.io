@@ -54,20 +54,20 @@ div{
     display: block;
     text-decoration: none;
     color: white;
-    width: 170px;
+    width: 120px;
     /*padding: 10px;*/ 
 }
 
 .menu ul li{
     background-color: #001460;
-    width: 170px;
+    width: 120px;
     height: 40px;
     line-height: 40px;
     text-align: center;
     display: inline-block;
     float: left;
     color: white;
-    font-size: 17px;
+    font-size: 15px;
     box-sizing: border-box;
 }
 
@@ -78,6 +78,7 @@ div{
 
 .menu ul ul li{
     box-shadow: 0 10px 10px 0px rgba(0, 0, 0, 0.5);
+    font-size: 12px;
 }
 
 .menu a:hover{
@@ -85,6 +86,7 @@ div{
     color: #001460;
     cursor: pointer;
     box-shadow: 0 10px 10px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 7px;
 }
 
 .menu ul li:hover ul{
@@ -173,7 +175,7 @@ input[type=button]:hover{
 .dashboard1{
     float: left;
     background-color: rgba(255, 255, 255, 0.75);
-    width: 770px;
+    width: 600px;
     height: 500px;
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
     padding: auto;
@@ -192,7 +194,7 @@ input[type=button]:hover{
 .box_hasil{
     box-sizing: border-box;
     background-color: #25255f;
-    width: 300px;
+    width: 200px;
     height: 170px;
     padding: 7px;
     border-radius: 30px;
@@ -212,7 +214,7 @@ input[type=button]:hover{
 .box_jadwal {
     box-sizing: border-box;
     background-color: #25255f;
-    width: 300px;
+    width: 200px;
     height: 170px;
     padding: 7px;
     border-radius: 30px;
@@ -232,7 +234,7 @@ input[type=button]:hover{
 .box_pelajaran {
     box-sizing: border-box;
     background-color: #25255f;
-    width: 300px;
+    width: 200px;
     height: 170px;
     padding: 7px;
     border-radius: 30px;
@@ -252,7 +254,7 @@ input[type=button]:hover{
 .box_data {
     box-sizing: border-box;
     background-color: #25255f;
-    width: 300px;
+    width: 200px;
     height: 170px;
     padding: 7px;
     border-radius: 30px;
@@ -273,7 +275,7 @@ input[type=button]:hover{
     
     box-sizing: border-box;
     background-color: rgba(255, 255, 255, 0.75);
-    width: 640px;
+    width: 500px;
     height: 245px;
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
     padding: 10px 20px 20px 20px;
@@ -293,7 +295,7 @@ input[type=button]:hover{
     box-sizing: border-box;
     background-color: #ffffff;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    width: 595px;
+    width: 460px;
     height: 70px;
     border-radius: 10px;
     margin: 10px auto auto auto;
@@ -314,7 +316,7 @@ input[type=button]:hover{
     box-sizing: border-box;
     background-color: #ffffff;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    width: 595px;
+    width: 460px;
     height: 70px;
     border-radius: 10px;
     margin: 8px auto auto auto;
@@ -334,7 +336,7 @@ input[type=button]:hover{
 .dashboard3 {
     box-sizing: border-box;
     background-color: rgba(255, 255, 255, 0.75);
-    width: 640px;
+    width: 500px;
     height: 245px;
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
     margin: 10px 40px 0px 5px;
@@ -355,7 +357,7 @@ input[type=button]:hover{
     box-sizing: border-box;
     background-color: #ffffff;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    width: 595px;
+    width: 460px;
     height: 70px;
     border-radius: 10px;
     margin: 10px auto auto auto;
@@ -371,7 +373,7 @@ input[type=button]:hover{
     box-sizing: border-box;
     background-color: #ffffff;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    width: 595px;
+    width: 460px;
     height: 70px;
     border-radius: 10px;
     margin: 8px auto auto auto;
