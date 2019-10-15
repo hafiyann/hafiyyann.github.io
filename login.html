@@ -3,9 +3,21 @@
 <head>
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="style_login.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript">
+    function validateForm(inputtxt) {
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+        var letters = /^[A-Za-z]+$/;
+        if (username == "" || password == "" && inputtxt.value.match(letters)) {
+            alert("Semua Form Harus Diisi dan Tidak Boleh Angka");
+        } else if (username) {
+            alert("Masukkan Harus Huruf")
+        }   
+    }
+</script>
 </head>
 <body>
-    
         <form class="container"> 
             <div class="container1">
                 <img src="http://web.sman1jember.sch.id/images/LOGO-SMA-RUJUKAN-rev2-500px.png" alt="Logo SMAN 1 Jember" id="as">
@@ -19,13 +31,16 @@
                 <div class="container2a">
                     <h1><b>MASUK</b> SISWA</h1>
                     <hr>
-                    <input type="text" placeholder="Masukkan Username.....">
-                    <input type="text" placeholder="Masukkan Password....."><br><br>
-                    <input type="button" value="Lupa Password" class="password">
-                    <input type="button" value="Masuk">
+                    <form onclick="validateForm()">
+                        <input type="text" name="username" placeholder="Masukkan Username....." id="username">
+                        <input type="text" placeholder="Masukkan Password....." name="password" id="password"><br><br>
+                        <input type="button" value="Lupa Password" class="password">
+                        <input type="button" onclick="validateForm()" value="Masuk">
+                    </form>
                 </div>
             </div>
-
         </form>
 </body>
+
+
 </html>
