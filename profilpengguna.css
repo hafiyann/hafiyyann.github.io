@@ -9,7 +9,7 @@ body{
 	background-image: url("SOURCE/Background samping.png");
 	background-repeat: no-repeat;
 	background-position: top right;
-	background-size: 65%;
+	background-size: 60%;
 }   
 
 div {
@@ -155,7 +155,7 @@ input[type=button]:hover{
     background-color: #001460;
     border-radius: 10px;
     color: white;
-    padding: 10px 10px 10px 50px;
+    padding: 30px 30px 30px 50px;
     box-sizing: border-box;
 }
 

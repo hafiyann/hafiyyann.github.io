@@ -43,7 +43,7 @@ div{
 .menu{
     position: relative;
     margin: 40px 0px 40px 0px;
-    margin-left: 23%;
+    margin-left: 25%;
     /*width: 100%;*/
 }
 
@@ -55,20 +55,20 @@ div{
     display: block;
     text-decoration: none;
     color: white;
-    width: 170px;
+    width: 120px;
     /*padding: 10px;*/ 
 }
 
 .menu ul li{
     background-color: #001460;
-    width: 170px;
+    width: 120px;
     height: 40px;
     line-height: 40px;
     text-align: center;
     display: inline-block;
     float: left;
     color: white;
-    font-size: 20px;
+    font-size: 15px;
     box-sizing: border-box;
 }
 
@@ -79,7 +79,7 @@ div{
 
 .menu ul ul li{
     box-shadow: 0 10px 10px 0px rgba(0, 0, 0, 0.5);
-    font-size: 17px;
+    font-size: 12px;
 }
 
 .menu a:hover{
@@ -87,6 +87,7 @@ div{
     color: #001460;
     cursor: pointer;
     box-shadow: 0 10px 10px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 7px;
 }
 
 .menu ul li:hover ul{
