@@ -176,10 +176,10 @@ input[type=button]:hover{
     float: left;
     background-color: rgba(255, 255, 255, 0.75);
     width: 600px;
-    height: 500px;
+    height: 460px;
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
     padding: auto;
-    margin: 30px 0px 0px 30px;
+    margin: 8px 0px 0px 30px;
     box-sizing: border-box;
     border-radius: 10px;
 }
@@ -187,18 +187,18 @@ input[type=button]:hover{
 .dashboard1 h1{
     font-weight: normal;
     color: #001460;
-    margin: 20px 0px 0px 40px;
+    margin: 20px 0px 0px 20px;
     font-size: 40px;
 }
 
 .box_hasil{
     box-sizing: border-box;
     background-color: #25255f;
-    width: 200px;
-    height: 170px;
+    width: 250px;
+    height: 150px;
     padding: 7px;
     border-radius: 30px;
-    margin: 15px 20px auto 70px;
+    margin: 25px 50px auto 24px;
     float: left;
     text-align: center;
     color: white;
@@ -214,12 +214,12 @@ input[type=button]:hover{
 .box_jadwal {
     box-sizing: border-box;
     background-color: #25255f;
-    width: 200px;
-    height: 170px;
+    width: 250px;
+    height: 150px;
     padding: 7px;
     border-radius: 30px;
     display: inline-block;
-    margin: 15px auto 20px auto;
+    margin: 25px auto 18px auto;
     text-align: center;
     color: white;
 }
@@ -234,11 +234,11 @@ input[type=button]:hover{
 .box_pelajaran {
     box-sizing: border-box;
     background-color: #25255f;
-    width: 200px;
-    height: 170px;
+    width: 250px;
+    height: 150px;
     padding: 7px;
     border-radius: 30px;
-    margin: auto 20px auto 70px;
+    margin: 25px 50px auto 24px;
     color: white;
     text-align: center;
     float: left;
@@ -254,12 +254,12 @@ input[type=button]:hover{
 .box_data {
     box-sizing: border-box;
     background-color: #25255f;
-    width: 200px;
-    height: 170px;
+    width: 250px;
+    height: 150px;
     padding: 7px;
     border-radius: 30px;
     display: inline-block;
-    margin: 1px auto 30px auto;
+    margin: 25px auto 30px auto;
     text-align: center;
     color: white
 }
@@ -276,10 +276,10 @@ input[type=button]:hover{
     box-sizing: border-box;
     background-color: rgba(255, 255, 255, 0.75);
     width: 500px;
-    height: 245px;
+    height: 225px;
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
     padding: 10px 20px 20px 20px;
-    margin: 30px 40px 0px 5px;
+    margin: 8px 40px 0px 5px;
     box-sizing: border-box;
     border-radius: 10px;
     float: right;
@@ -337,7 +337,7 @@ input[type=button]:hover{
     box-sizing: border-box;
     background-color: rgba(255, 255, 255, 0.75);
     width: 500px;
-    height: 245px;
+    height: 225px;
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
     margin: 10px 40px 0px 5px;
     padding: 10px 20px 20px 20px;
