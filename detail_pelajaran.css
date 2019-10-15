@@ -43,7 +43,7 @@ div{
 .menu{
     position: relative;
     margin: 40px 0px 40px 0px;
-    margin-left: 23%;
+    margin-left: 19%;
     /*width: 100%;*/
 }
 
@@ -55,20 +55,20 @@ div{
     display: block;
     text-decoration: none;
     color: white;
-    width: 170px;
+    width: 135px;
     /*padding: 10px;*/ 
 }
 
 .menu ul li{
     background-color: #001460;
-    width: 170px;
+    width: 135px;
     height: 40px;
     line-height: 40px;
     text-align: center;
     display: inline-block;
     float: left;
     color: white;
-    font-size: 20px;
+    font-size: 15px;
     box-sizing: border-box;
 }
 
@@ -79,7 +79,7 @@ div{
 
 .menu ul ul li{
     box-shadow: 0 10px 10px 0px rgba(0, 0, 0, 0.5);
-    font-size: 17px;
+    font-size: 12px;
 }
 
 .menu a:hover{
@@ -113,7 +113,7 @@ input[type=button]:hover{
 	background-color: rgba(255, 255, 255, 0.75);
 	margin: 10px 0px 0px 0px;
 	padding: 20px 100px 100px 120px;
-    width: auto;
+    width: 100%;
     height: 100%;
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
     box-sizing: border-box;
@@ -127,20 +127,26 @@ input[type=button]:hover{
 
 .box1 {
 	background-color: white;
-    width: 300px;
-    height: 100px;
+    width: 100%;
+    height: 100%;
+    padding: 10px 10px 10px 30px;
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
     box-sizing: border-box;
 	border-radius: 10px;
 	margin : 38px 15px 0 15px;
-	text-align: center;
+	text-align: left;
 	float: left;
 }
 
-.box2 {
+.box1 ul li {
+    list-style: none;
+    line-height: 30px;
+}
+
+/*.box2 {
 	background-color: white;
-    width: 300px;
-    height: 100px;
+    width: 1000px;
+    height: 100%;
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
     box-sizing: border-box;
 	border-radius: 10px;
@@ -148,13 +154,17 @@ input[type=button]:hover{
 	text-align: center;
 	float: left;
 	padding: 17.5px 0px 17.5px 0px;
-}
+}*/
 
 .box1 h1 {
 	font-size: 25px;
-	line-height: 100px;
+    font-weight: normal;
 }
 
-.box2 h1 {
+/*.box1 hr{
+    background-color: #001460;
+}*/
+
+/*.box2 h1 {
 	font-size: 27px;
-}
+}*/
