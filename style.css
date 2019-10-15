@@ -1,0 +1,265 @@
+body{
+	margin: 0px;
+	padding: 0px 0px 100px 0px;
+	font-family: roboto;
+	background-image: url("Background samping.png");
+	background-repeat: no-repeat;
+	background-position: top right;
+	background-size: 65%;
+}
+
+div{
+	display: inline-block;
+}
+
+/*@media only screen and (min-width: 400px){
+
+}*/
+
+.namaweb h1{
+    float: left;
+    font-size: 26px;
+    display: inline-block;
+    margin-left: 5px;
+    margin: 37px 0px 0px 9px;
+    color: #001460;
+    font-weight: normal;
+}
+
+.namaweb img{
+    margin: 30px 10px 0px 30px;
+    float: left;
+    width: 80px;
+    height: 80px;
+}
+
+.menu{
+	margin: 15px 10px 0px 0px;
+	float: right;
+}
+
+.menu ul{
+	display: block;
+	margin: 0px;
+	padding-left: 0px;
+}
+
+.menu ul li{
+	margin: 0px;
+	list-style-type: none;
+	display: inline-block;
+	padding-left: 10px;
+}
+
+.menu a{
+	display: block;
+	text-decoration: none;
+	color: #ffffff;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+.content {
+	display: inline-block;
+	width: 400px;
+	margin: 80px 0px 0px 40px;
+	background-color: #e6e7eb;
+	color: #001460;
+	padding: 10px;
+	border-left: 6px solid #001460;
+	border-radius: 0px 10px 10px 0px;
+}
+
+.content a{
+	display: block;
+	width: 110px;
+	padding: 10px 12px;
+	color: #ffffff;
+	text-align: left;
+	text-decoration: none;
+	background-color: #001460;
+	border-radius: 5px;
+}
+
+.content input[type=text], textarea{
+	font-family: roboto;
+	width: 300px;
+	margin-top: 5px;
+	border-radius: 10px;
+	padding: 10px;
+	border: 0px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.content input[type=button]{
+	width:100px;
+	color: white;
+	background-color: #001460;
+	margin-top: 10px;
+	padding: 5px;
+	border-radius: 5px;
+	border: 0px;
+}
+
+a:hover{
+	color: #050766;
+	font-weight: bold;
+	background-color: #ffffff;
+}
+
+input[type=button]:hover{
+	color: #050766;
+	cursor: pointer;
+	font-weight: bold;
+	background-color: #ffffff;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.gambar{
+	display: inline-block;
+	margin-top: 60px;
+	margin-right: 200px; 
+	float: right;
+}
+
+.gambar1{
+	width: 45%;
+	display: inline-block;
+	margin-top: 100px;
+	margin-right: 150px; 
+	float: right;
+}
+
+.gambar1 img{
+	width: 100%;
+}
+
+
+@media only screen and (max-width: 900px){
+	/*for mobile*/
+	body{
+		margin: 0px;
+		padding: 0px 0px 50px 0px;
+		font-family: roboto;
+		background-image: url("Background samping.png");
+		background-repeat: no-repeat;
+		background-position: top right;
+		background-size: 0%;
+	}
+
+	.namaweb{
+		width: 100%;
+		background-color: white;
+		margin: 30px 0px 0px 9px;
+		float: left;
+		padding: 10px;
+		border-radius: 10px;
+		box-sizing: border-box;
+	}
+
+	.namaweb h1{
+		margin: 0px;
+	    font-size: 26px;
+	    display: inline-block;
+	    margin-left: 5px;
+	    padding: 7px 0px 0px 0px;
+	    color: #001460;
+	    font-weight: normal;
+	}
+
+	.namaweb img{
+		margin: 0px;
+	    width: 80px;
+	    height: 80px;
+	}
+
+	.menu{
+		margin: 15px 0px 0px 0px;
+		background-color: #001460;
+		display: block;
+		width: 100%;
+		box-sizing: border-box;
+	}
+
+	.menu ul{
+		display: block;
+		margin: 0px;
+		padding-left: 0px;
+	}
+
+	.menu ul li{
+		margin: 0px;
+		list-style-type: none;
+		display: inline-block;
+		padding-left: 10px;
+	}
+
+	.menu a{
+		display: block;
+		text-decoration: none;
+		color: #ffffff;
+		padding: 10px;
+		border-radius: 5px;
+	}
+
+	a:hover{
+		color: #001460;
+		font-weight: bold;
+		background-color: #ffffff;
+	}
+
+	.content {
+		display: inline-block;
+		width: 400px;
+		margin: 40px;
+		background-color: #e6e7eb;
+		color: #001460;
+		padding: 10px;
+		border-left: 6px solid #001460;
+		border-radius: 0px 10px 10px 0px;
+		box-sizing: border-box;
+	}
+
+	.content a{
+		display: block;
+		width: 110px;
+		padding: 10px 12px;
+		color: #ffffff;
+		text-align: left;
+		text-decoration: none;
+		background-color: #001460;
+		border-radius: 5px;
+	}
+
+	.content h1{
+		margin: 5px 0px 10px 0px;
+	}
+
+	.content input[type=text], textarea{
+		font-family: roboto;
+		width: 300px;
+		margin-top: 5px;
+		border-radius: 10px;
+		padding: 10px;
+		border: 0px;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	}
+
+	.content input[type=button]{
+		width:100px;
+		color: white;
+		background-color: #001460;
+		margin-top: 10px;
+		padding: 5px;
+		border-radius: 5px;
+		border: 0px;
+	}
+
+	.gambar1{
+		display: none;
+	}
+
+	.gambar{
+		display: none;
+	}
+}
