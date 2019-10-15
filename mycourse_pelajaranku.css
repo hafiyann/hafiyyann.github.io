@@ -125,6 +125,11 @@ input[type=button]:hover{
 	font-size: 40px;
 }
 
+.dashboard a:hover {
+    background-color: #001460;
+    color: white;
+}
+
 .box1 {
 	background-color: white;
     width: 300px;
