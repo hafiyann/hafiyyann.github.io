@@ -11,8 +11,8 @@
         var letters = /^[A-Za-z]+$/;
         if (username == "" || password == "" && inputtxt.value.match(letters)) {
             alert("Semua Form Harus Diisi dan Tidak Boleh Angka");
-        } else if (username) {
-            alert("Masukkan Harus Huruf")
+        } else if (username < "a" || username > "z") {
+            alert("Username Harus Berupa Huruf")
         }   
     }
 </script>
