@@ -271,6 +271,14 @@ input[type=button]:hover{
     display: inline-block;
 }
 
+.box_data:hover {
+    background-color: #34ebcc;
+}
+
+.box_pelajaran:hover {
+    background-color: #34ebcc;
+}
+
 .dashboard2 {
     
     box-sizing: border-box;
