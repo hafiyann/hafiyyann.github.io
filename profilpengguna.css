@@ -143,6 +143,21 @@ input[type=button]:hover{
     border-radius: 50%;
 }
 
+.foto{
+    float: left;
+}
+
+.profil {
+    margin-left: 100px;
+    width: 700px;
+    padding:20px 50px 20px 40px;
+    background-color: #001460;
+    float: left;
+    color: white;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
 
 
 .hide {
