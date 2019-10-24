@@ -271,6 +271,14 @@ input[type=button]:hover{
     display: inline-block;
 }
 
+.box_data:hover {
+    background-color: #34ebcc;
+}
+
+.box_pelajaran:hover {
+    background-color: #34ebcc;
+}
+
 .dashboard2 {
     
     box-sizing: border-box;
@@ -284,11 +292,25 @@ input[type=button]:hover{
     border-radius: 10px;
     float: right;
 }
-.dashboard2 h1 {
+.headerevent h1 {
     font-weight: normal;
     color: #001460;
     font-size: 29px;
-    margin: auto;
+    display: inline-block;
+    margin-right: 190px;
+}
+
+.tambahkanevent h1{
+    background-color: white;
+    color: #001460;
+    padding: 5px 14px 5px 14px;
+    border-radius: 50%;
+    margin: 0px;
+}
+
+.dashboard2 a: hover{
+    background-color: #001460;
+    color: white;
 }
 
 .box1{

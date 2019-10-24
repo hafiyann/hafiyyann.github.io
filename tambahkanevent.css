@@ -5,15 +5,16 @@
 
 body{
 	margin: 0px;
+	padding: 0px 0px 50px 0px;
 	font-family: roboto;
 	background-image: url("SOURCE/Background samping.png");
 	background-repeat: no-repeat;
 	background-position: top right;
-	background-size: 60%;
-}   
+	background-size: 65%;
+}
 
-div {
-    display: inline-block;
+div{
+	display: inline-block;
 }
 
 .namaweb{
@@ -101,8 +102,16 @@ div {
     cursor: pointer;
 }
 
-.content{
-    height: 700px;
+/*input[type=button]:hover{
+	color: #050766;
+	cursor: pointer;
+	font-weight: bold;
+	background-color: #ffffff;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}*/
+
+.container{
+    height: 450px;
     width: auto;
     color: #001460;
     display: block;
@@ -111,24 +120,37 @@ div {
     box-sizing: border-box;
 }
 
-.content h1{
-    margin: 0px;
+.container h1 {
+	font-weight: normal;
+	color: #001460;
+	font-size: 40px;
+    margin-bottom: 20px;
 }
 
-.dashboard2 h1{
-    display: inline-block;
+.content{
+    width: 400px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.tambahkanevent{
-    display: inline-block;
+.content input[type=text], textarea{
+    font-family: roboto;
+    width: 300px;
+    margin-top: 5px;
+    border-radius: 10px;
+    padding: 10px;
+    border: 0px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.foto input[type=button]{
-    width: auto;
+.content input[type=button]{
+    width:100px;
     color: white;
     background-color: #001460;
     margin-top: 10px;
-    padding: 10px;
+    padding: 5px;
     border-radius: 5px;
     border: 0px;
 }
@@ -137,47 +159,6 @@ input[type=button]:hover{
     color: #050766;
     cursor: pointer;
     font-weight: bold;
-    background-color: #ffffff;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.foto img{
-    float: left;
-    height: 200px;
-    width: 200px;
-    border: 2px;
-    margin-top: 20px;
-    margin-bottom: 50px;
-    border-radius: 50%;
-}
-
-
-
-.hide {
-    position: absolute;
-    overflow: hidden;
-    z-index: -1;
-    width: 0.1;
-    height: 0.1;
-    opacity: 0;
-}
-
-label {
-    float: left;
-    height: 15.5px;
-    margin: 10px 0px 0px 0px;
-    width: auto;
-    color: white;
-    background-color: #001460;
-    padding: 10px;
-    border-radius: 5px;
-    text-align: center;
-}
-
-label:hover{
-    color: #050766;
-    font-weight: bold;
-    cursor: pointer;
     background-color: #ffffff;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
