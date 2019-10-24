@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
 *{
     margin: 0px;
     padding: 0px;
@@ -5,15 +7,16 @@
 
 body{
 	margin: 0px;
+	padding: 0px 0px 50px 0px;
 	font-family: roboto;
 	background-image: url("SOURCE/Background samping.png");
 	background-repeat: no-repeat;
 	background-position: top right;
-	background-size: 60%;
-}   
+	background-size: 65%;
+}
 
-div {
-    display: inline-block;
+div{
+	display: inline-block;
 }
 
 .namaweb{
@@ -101,9 +104,9 @@ div {
     cursor: pointer;
 }
 
-.content{
-    height: 700px;
-    width: auto;
+.container{
+    height: auto;
+    width: 100%;
     color: #001460;
     display: block;
     background-color: rgba(240,240,240,0.5);
@@ -111,75 +114,92 @@ div {
     box-sizing: border-box;
 }
 
-.content h1{
-    margin: 0px;
+.container h1 {
+	font-weight: normal;
+	color: #001460;
+	font-size: 40px;
+    margin-bottom: 20px;
 }
 
-.foto input[type=button]{
-    width: auto;
-    color: white;
-    background-color: #001460;
-    margin-top: 10px;
-    padding: 10px;
-    border-radius: 5px;
-    border: 0px;
-}
-
-input[type=button]:hover{
-    color: #050766;
-    cursor: pointer;
-    font-weight: bold;
-    background-color: #ffffff;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.foto img{
-    float: left;
-    height: 200px;
-    width: 200px;
-    border: 2px;
+.content{
     margin-top: 20px;
-    margin-bottom: 50px;
-    border-radius: 50%;
-}
-
-.profil{
-    float: right;
-    margin-right: 10%;
-    width: 700px;
-    height: auto;
-    background-color: #001460;
-    border-radius: 10px;
-    color: white;
-    padding: 30px 30px 30px 50px;
-    box-sizing: border-box;
-}
-
-.hide {
-    position: absolute;
-    overflow: hidden;
-    z-index: -1;
-    width: 0.1;
-    height: 0.1;
-    opacity: 0;
-}
-
-label {
-    float: left;
-    height: 15.5px;
-    margin: 10px 0px 0px 0px;
     width: auto;
-    color: white;
-    background-color: #001460;
-    padding: 10px;
-    border-radius: 5px;
-    text-align: center;
-}
-
-label:hover{
-    color: #050766;
-    font-weight: bold;
-    cursor: pointer;
-    background-color: #ffffff;
+    background-color: white;
+    padding: 20px 100px 20px 100px;
+    border-radius: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
+.content table{
+    border-collapse: collapse;
+    border-spacing: 0px;
+}
+
+#tableheader th{
+    padding: 5px 300px 5px 2px;
+    border-bottom: 3px solid #001460;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: left;
+}
+
+.content table td{
+    font-size: 20px;
+    padding: 8px;
+}
+
+#tableheader th[id="2"]{
+    padding-right: 100px;
+}
+
+#tableheader th[id="3"]{
+    padding-right: 100px;
+}
+
+.pilihan ul{
+    list-style: none;
+}
+
+.pilihan a{
+    background-color: white;
+    display: block;
+    text-decoration: none;
+    color: #001460;
+    width: 120px;
+    box-shadow: 0 0px 8px 0px rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.pilihan ul ul{
+    display: none;
+    border:none;
+}
+
+.pilihan ul ul a{
+    border-radius: 0px;
+    box-shadow: 0 0px 0px 0px rgba(0, 0, 0, 0.5);
+}
+
+.pilihan ul li:hover ul {
+    display: block;
+    position: absolute;
+}
+
+/*.pilihankelas ul li:hover ul {
+    display: block;
+    position: absolute;
+}*/
+
+.pilihan ul li a:hover{
+    border-radius: 5px 5px 0px 0px;
+    background-color: #001460;
+    color: white;
+}
+
+.pilihan ul ul a:hover{
+    border-radius: 0px;
+    box-shadow: 0 0px 0px 0px rgba(0, 0, 0, 0.5);
+}
+
