@@ -188,3 +188,60 @@ label:hover{
     background-color: #ffffff;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
+
+.bg-popup{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.popup{
+    width: 500px;
+    height: auto;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    color: #001460;
+}
+
+.popup input[type=password]{
+    width: 80%;
+    margin-top: 20px;
+    padding: 10px;
+    border: 0px;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+}
+
+.popup input[type=button]{
+    width: 100px;
+    margin: 20px 10px 10px 0px;
+    padding: 10px;
+    border: 0px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+}
+
+.popup input[type=button]:hover{
+    background-color: #001460;
+    color: white;
+}
+
+.popup hr{
+  margin: auto;
+  width: 150px;
+  background-color: #001460;
+  height: 3px;
+  border: 0px;
+}
