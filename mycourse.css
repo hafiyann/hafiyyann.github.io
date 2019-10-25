@@ -239,6 +239,14 @@ input[type=button]:hover{
     background-color: #34ebcc;
 }
 
+.box_hasil:hover {
+    background-color: #34ebcc;
+}
+
+.box_jadwal:hover {
+    background-color: #34ebcc;
+}
+
 .dashboard2 {
     
     box-sizing: border-box;
