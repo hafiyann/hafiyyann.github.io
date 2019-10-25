@@ -3,22 +3,21 @@
 <head>
     <title>E-LEARNING SMASa</title>
     <link rel="stylesheet" type="text/css" href="style_login.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script type="text/javascript">
-    function validateForm(inputtxt) {
-        var username = document.getElementById("username").value;
-        var password = document.getElementById("password").value;
-        var letters = /^[A-Za-z]+$/;
-        if (username == "" || password == "" && inputtxt.value.match(letters)) {
-            alert("Semua Form Harus Diisi dan Tidak Boleh Angka");
-        } else if (username < "a" || username > "z") {
-            alert("Username Harus Berupa Huruf Kecil")
-        } 
-        else{
-           window.location = "mycourse.html" 
+    <script type="text/javascript">
+        function validateForm(inputtxt) {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+            var letters = /^[A-Za-z]+$/;
+            if (username == "" || password == "" && inputtxt.value.match(letters)) {
+                alert("Semua Form Harus Diisi dan Tidak Boleh Angka");
+            } else if (username < "a" || username > "z") {
+                alert("Username Harus Berupa Huruf Kecil")
+            } 
+            else{
+               window.location = "mycourse.html" 
+            }
         }
-    }
-</script>
+    </script>
 </head>
 <body>
         <form class="container"> 
@@ -37,11 +36,33 @@
                     <form onclick="validateForm()">
                         <input type="text" name="username" placeholder="Masukkan Username....." id="username">
                         <input type="password" placeholder="Masukkan Password....." name="password" id="password"><br><br>
-                        <input type="button" value="Lupa Password" class="password">
+                        <input type="button" id="lupapassword" value="Lupa Password" class="password">
                         <input type="button" onclick="validateForm()" value="Masuk">
                     </form>
                 </div>
             </div>
         </form>
+    <div class="bg-popup">
+        <div class="popup">
+            <h1>LUPA PASSWORD</h1>
+            <hr>
+            <form> 
+                <input type="text" placeholder="Masukkan Email Pemulihan..."><br>
+                <input type="button" id="kirim" value="KIRIM">
+                <input type="button" id="batal" value="BATAL">          
+            </form>
+        </div>
+    </div>
+<script type="text/javascript">
+    document.getElementById('lupapassword').addEventListener('click',function(){
+        document.querySelector('.bg-popup').style.display = 'flex';
+    });
+    document.getElementById('kirim').addEventListener('click',function(){
+        document.querySelector('.bg-popup').style.display = 'none';
+    });
+    document.getElementById('batal').addEventListener('click',function(){
+        document.querySelector('.bg-popup').style.display = 'none';
+    });
+</script>
 </body>
 </html>
