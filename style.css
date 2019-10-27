@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
 body{
 	margin: 0px;
 	padding: 0px 0px 100px 0px;
-	font-family: roboto;
+	font-family: 'Roboto', sans-serif;
 	background-image: url("SOURCE/Background samping.png");
 	background-repeat: no-repeat;
 	background-position: top right;
@@ -11,10 +13,6 @@ body{
 div{
 	display: inline-block;
 }
-
-/*@media only screen and (min-width: 400px){
-
-}*/
 
 .namaweb h1{
     float: left;
@@ -137,20 +135,18 @@ input[type=button]:hover{
 
 @media only screen and (max-width: 900px){
 	/*for mobile*/
-	body{
+	*{
 		margin: 0px;
-		padding: 0px 0px 50px 0px;
-		font-family: roboto;
-		background-image: url("Background samping.png");
-		background-repeat: no-repeat;
-		background-position: top right;
+		padding: 0px;
+	}
+
+	body{
 		background-size: 0%;
 	}
 
 	.namaweb{
 		width: 100%;
 		background-color: white;
-		margin: 30px 0px 0px 9px;
 		float: left;
 		padding: 10px;
 		border-radius: 10px;
@@ -159,7 +155,7 @@ input[type=button]:hover{
 
 	.namaweb h1{
 		margin: 0px;
-	    font-size: 26px;
+	    font-size: 12px;
 	    display: inline-block;
 	    margin-left: 5px;
 	    padding: 7px 0px 0px 0px;
@@ -169,16 +165,17 @@ input[type=button]:hover{
 
 	.namaweb img{
 		margin: 0px;
-	    width: 80px;
-	    height: 80px;
+	    width: 40px;
+	    height: 40px;
 	}
 
 	.menu{
-		margin: 15px 0px 0px 0px;
+		margin: 0px;
 		background-color: #001460;
 		display: block;
 		width: 100%;
 		box-sizing: border-box;
+		font-size: 10px;
 	}
 
 	.menu ul{
@@ -202,7 +199,7 @@ input[type=button]:hover{
 		border-radius: 5px;
 	}
 
-	a:hover{
+	.menu a:hover{
 		color: #001460;
 		font-weight: bold;
 		background-color: #ffffff;
@@ -210,19 +207,20 @@ input[type=button]:hover{
 
 	.content {
 		display: inline-block;
-		width: 400px;
-		margin: 40px;
+		width: 80%;
+		margin: 40px auto auto 40px;
 		background-color: #e6e7eb;
 		color: #001460;
 		padding: 10px;
 		border-left: 6px solid #001460;
 		border-radius: 0px 10px 10px 0px;
 		box-sizing: border-box;
+		font-size: 17px;
 	}
 
 	.content a{
-		display: block;
-		width: 110px;
+		display: inline-block;
+		width: auto;s
 		padding: 10px 12px;
 		color: #ffffff;
 		text-align: left;
@@ -231,13 +229,23 @@ input[type=button]:hover{
 		border-radius: 5px;
 	}
 
+	.content a:hover{
+		color: #001460;
+		font-weight: bold;
+		background-color: #ffffff;
+	}
+
+	.content p{
+		margin-bottom: 10px;
+	}
+
 	.content h1{
 		margin: 5px 0px 10px 0px;
 	}
 
 	.content input[type=text], textarea{
 		font-family: roboto;
-		width: 300px;
+		width: 80%;
 		margin-top: 5px;
 		border-radius: 10px;
 		padding: 10px;
@@ -246,12 +254,12 @@ input[type=button]:hover{
 	}
 
 	.content input[type=button]{
-		width:100px;
+		width: auto;
 		color: white;
 		background-color: #001460;
 		margin-top: 10px;
-		padding: 5px;
-		border-radius: 5px;
+		padding: 8px 20px 8px 20px;
+		border-radius: 7px;
 		border: 0px;
 	}
 
