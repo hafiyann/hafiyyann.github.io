@@ -180,17 +180,13 @@ input[type=button]:hover{
 	}
 
 	.menu{
-		margin: 0px;
-		background-color: #001460;
-		width: 100%;
-		box-sizing: border-box;
-		font-size: 10px;
+		font-size: 20px;
 
 	}
 
 	.menu ul{
 		position: fixed;
-		width: 100%;
+		width: 60%;
 		height: 100vh;
 		background: #001460;
 		top: 60px;
@@ -210,11 +206,12 @@ input[type=button]:hover{
 	.menu a{
 		display: block;
 		margin: 0px auto;
-		width: 25%;
+		width: 100%;
 		text-decoration: none;
 		color: #ffffff;
 		padding: 10px 0px;
 		border-radius: 0px;
+		border-bottom: 2px solid white;
 	}
 
 	.menu a:hover{
