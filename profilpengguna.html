@@ -29,8 +29,9 @@
 	<div class="content">
 		<h1>DATA <b>DIRIKU</b></h1>
 		<div class="foto">
-			<img src="SOURCE/user.png"><br>
-			<input type="file" name="ubahfoto" id="ubahfoto" class="hide"><br>
+			<img src="SOURCE/user.png" id="imgdefault"><br>
+			<img src="" id="imgpreview"><br>
+			<input type="file" id="ubahfoto" class="hide"><br>
 			<label for="ubahfoto"><span>UBAH FOTO</span></label><br>
 			<input type="button" id="ubahpassword" value="UBAH PASSWORD">
 		</div>
@@ -90,6 +91,29 @@
 	});
 	document.getElementById('batal').addEventListener('click',function(){
 		document.querySelector('.bg-popup').style.display = 'none';
+	});
+
+	const input = document.getElementById("ubahfoto");
+	const imgpreview = document.getElementById("imgpreview");
+	const imgdefault = document.getElementById("imgdefault");
+
+	input.addEventListener("change", function() {
+		const file = this.files[0];
+
+		console.log(file);
+		
+		if(file){
+			const reader = new FileReader();
+
+			reader.addEventListener("load", function() {
+				imgpreview.setAttribute("src", this.result);
+			});
+
+			reader.readAsDataURL(file);	
+			imgdefault.style.display = 'none';
+			imgpreview.style.display = 'block';	
+		}
+
 	});
 </script>
 </body>

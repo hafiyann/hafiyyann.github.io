@@ -26,12 +26,13 @@
 	</div>
 	<div class="content">
 		<h1>HUBUNGI KAMI</h1>
+		<div id="errormessage"></div>
 		<form>
-			<input type="text" name="nama" placeholder="Masukkan nama anda....">
-			<input type="text" name="email" placeholder="Masukkan alamat email....">
-			<input type="text" name="subjek" placeholder="Tulis subjek disini....">
-			<textarea placeholder="Tulis pesan anda disini..." rows="10" cols="30"></textarea>
-			<br><input type="button" name="kirim" value="KIRIM">
+			<input type="text" id="nama" placeholder="Masukkan nama anda....">
+			<input type="text" id="subjek" placeholder="Tulis subjek disini....">
+			<input type="text" id="email" placeholder="Masukkan alamat email....">
+			<textarea id="keterangan" placeholder="Tulis pesan anda disini..." rows="10" cols="30"></textarea>
+			<br><input type="button" onclick="validation()" value="KIRIM">
 		</form>
 	</div>
 	<div class="gambar1">
@@ -48,6 +49,48 @@
     		document.querySelector('.menu ul').style.left = '-100%';
     		document.querySelector('.hidebtn').style.display = "none";
     		document.querySelector('.checkbtn').style.display = "block";
+    	}
+
+    	function validation(){
+    		var nama = document.getElementById("nama").value;
+    		var email = document.getElementById('email').value;
+    		var subjek = document.getElementById('subjek').value;
+    		var keterangan = document.getElementById('keterangan').value;
+    		var	errormessage = document.getElementById('errormessage');
+    		var text;
+    		var n = email.indexOf("@");
+
+    		errormessage.style.padding = "10px";
+
+    		if(nama.length <5){
+    			text = "Silahkan isi nama anda dengan benar!..";
+    			errormessage.innerHTML = text;
+    			return false;
+    		}
+
+    		if(subjek.length <10){
+    			text = "Silahkan isi subjek dengan benar!..";
+    			errormessage.innerHTML = text;
+    			return false;
+    		}
+
+    		if(n == -1){
+    			text = "Silahkan isi email dengan benar!..";
+    			errormessage.innerHTML = n;
+    			return false;
+    		}
+
+    		if(keterangan.length == 0){
+    			text = "Keterangan tidak boleh kosong!..";
+    			errormessage.innerHTML = text;
+    			return false;
+    		}
+
+    		errormessage.style.padding = "0px";
+    		text = null;
+    		errormessage.innerHTML = null;
+    		alert("Terimakasih, keluhan anda akan segera kami tindak lanjuti!");
+    		return false;
     	}
 	</script>
 </body>

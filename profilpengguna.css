@@ -137,10 +137,14 @@ input[type=button]:hover{
     float: left;
     height: 200px;
     width: 200px;
-    border: 2px;
+    border: 1px solid #001460;
     margin-top: 20px;
     margin-bottom: 50px;
     border-radius: 50%;
+}
+
+#imgpreview{
+    display: none;
 }
 
 .foto{
@@ -158,20 +162,12 @@ input[type=button]:hover{
     box-sizing: border-box;
 }
 
-
-
 .hide {
-    position: absolute;
-    overflow: hidden;
-    z-index: -1;
-    width: 0.1;
-    height: 0.1;
-    opacity: 0;
+    display: none;
 }
 
 label {
     float: left;
-    height: 15.5px;
     margin: 10px 0px 0px 0px;
     width: auto;
     color: white;
@@ -181,7 +177,7 @@ label {
     text-align: center;
 }
 
-label:hover{
+.foto label: hover{
     color: #050766;
     font-weight: bold;
     cursor: pointer;
