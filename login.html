@@ -4,17 +4,18 @@
     <title>E-LEARNING SMASa</title>
     <link rel="stylesheet" type="text/css" href="style_login.css">
     <script type="text/javascript">
-        function validateForm(inputtxt) {
-            var username = document.getElementById("username").value;
-            var password = document.getElementById("password").value;
-            var letters = /^[A-Za-z]+$/;
-            if (username == "" || password == "" && inputtxt.value.match(letters)) {
-                alert("Semua Form Harus Diisi dan Tidak Boleh Angka");
-            } else if (username < "a" || username > "z") {
-                alert("Username Harus Berupa Huruf Kecil")
-            } 
-            else{
-               window.location = "mycourse.html" 
+        function validateForm() {
+            var nama = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+            var text;
+
+            if(nama.length <5){
+                alert("Silahkan isi nama anda dengan benar!..");
+                return false;
+            }
+            if(password.length < 8){
+                alert("Password harus berisi 8 karakter atau lebih..");
+                return false;
             }
         }
     </script>
