@@ -66,18 +66,30 @@
 
             error_message.style.padding = "5px";
 
-            if(username.length <5){
+            if(username.length != 0 && username.length <5){
                 text = "Silahkan isi username anda dengan benar!..";
                 error_message.innerHTML = text;
                 return false;
-            }
-            if(password.length <5){
+            } else if (isNaN(username)){
+               text = "Silahkan isi username anda dengan angka!..";
+                error_message.innerHTML = text;
+                return false; 
+            } else if(password.length == 0 && username.length != 0){
+                text = "Silahkan isi password anda terlebih dahulu";
+                error_message.innerHTML = text;
+                return false;
+            }else if(password.length != 0 && password.length <5){
                 text = "Silahkan isi password anda dengan benar!..";
                 error_message.innerHTML = text;
                 return false;
-            }
-
-            return false;
+            } else if(username.length == 0 && password.length == 0){
+                text = "Form Tidak Boleh Kosong!";
+                error_message.innerHTML = text;
+                return false;
+            } else if(username.length != 0 && password.length != 0){
+               alert("Form Telah Selesai Diisi")
+                return true; 
+            }       
         }
     </script>
 </body>
