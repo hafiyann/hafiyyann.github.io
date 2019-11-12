@@ -9,14 +9,15 @@
             var password = document.getElementById('password').value;
             var text;
 
-            if(nama.length <5){
-                alert("Silahkan isi nama anda dengan benar!..");
+            if(nama.length == 0)
+                alert("Username tidak boleh kosong..");
                 return false;
             }
             if(password.length < 8){
                 alert("Password harus berisi 8 karakter atau lebih..");
-                return false;
-            }
+                if(password.length == 0)
+                    alert("Password tidak boleh kosong..");
+                    return false;
         }
     </script>
 </head>
