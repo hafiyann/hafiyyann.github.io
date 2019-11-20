@@ -62,9 +62,19 @@
         <div class="box1">
             <h1>BAHASA DAERAH</h1>
         </div>
-        <div class="box2">
+        <div class="box3" id="more">
             <h1>PENDIDIKAN<br>KEWARGANEGARAAN</h1>
         </div>
+        <div class="btn"id="btn1"> 
+              <input type="button" onclick="displayMore()" value="Tampilkan yang Lain"></input>
+        </div>
+         
     </div>
+    <script>
+        function displayMore() {
+            document.getElementById("more").style.display = 'inline-block';
+            document.getElementById("btn1").style.display = 'none';
+        }
+    </script>
 </body>
 </html>
