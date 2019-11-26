@@ -70,11 +70,13 @@
 		<div class="popup">
 			<h1>UBAH PASSWORD</h1>
 			<hr>
-			<form> 
-				<input type="password" name="lama" placeholder="Password lama"><br>
-				<input type="password" name="baru" placeholder="Password baru"><br>
-				<input type="button" id="ubah" value="UBAH">
-				<input type="button" id="batal" value="BATAL">			
+			<form onsubmit="return validate()"> 
+				<div id="error_message"></div>
+				<input type="password" name="lama" placeholder="Password lama" id="passwordLama"><br>
+				<input type="password" name="baru" placeholder="Password baru" id="passwordBaru"><br>
+				
+				<input type="submit" id="ubah" value="UBAH">
+				<input type="submit" id="batal" value="BATAL">		
 			</form>
 		</div>
 	</div>
@@ -86,10 +88,16 @@
 	document.getElementById('ubahpassword').addEventListener('click',function(){
 		document.querySelector('.bg-popup').style.display = 'flex';
 	});
-	document.getElementById('ubah').addEventListener('click',function(){
-		document.querySelector('.bg-popup').style.display = 'none';
+	document.getElementById('ubah').addEventListener('click',function(event){
+		event.preventDefault()
+		if (validate()){
+			bersihkanForm()
+			document.querySelector('.bg-popup').style.display = 'none';
+
+		}
 	});
 	document.getElementById('batal').addEventListener('click',function(){
+		bersihkanForm()
 		document.querySelector('.bg-popup').style.display = 'none';
 	});
 
@@ -115,6 +123,30 @@
 		}
 
 	});
+</script>
+<script type="text/javascript">
+	function validate() {
+            var passwordLama = document.getElementById('passwordLama').value;
+            var passwordBaru = document.getElementById('passwordBaru').value;
+            var error_message = document.getElementById('error_message');
+            var text;
+
+            error_message.style.padding = "5px";
+
+            if(passwordLama == passwordBaru){
+                text = "Password baru tidak boleh sama dengan password lama";
+                error_message.innerHTML = text;
+                return false;
+            } else { 
+            	return true; 
+            }
+    }
+
+    function bersihkanForm(){
+    	document.getElementById('passwordLama').value = '';
+		document.getElementById('passwordBaru').value = '';
+		document.getElementById('error_message').style.display = 'none'; 
+    }
 </script>
 </body>
 </html>

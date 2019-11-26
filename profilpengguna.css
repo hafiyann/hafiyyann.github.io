@@ -219,7 +219,8 @@ label {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
 }
 
-.popup input[type=button]{
+.popup input[type=submit]{
+    float: bottom;
     width: 100px;
     margin: 20px 10px 10px 0px;
     padding: 10px;
@@ -229,7 +230,7 @@ label {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
 }
 
-.popup input[type=button]:hover{
+.popup input[type=submit]:hover{
     background-color: #001460;
     color: white;
 }
@@ -240,4 +241,15 @@ label {
   background-color: #001460;
   height: 3px;
   border: 0px;
+}
+
+#error_message{
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    padding: 0px;
+    background-color: #fe8b8e;
+    text-align: center;
+    font-size: 10px;
+    transition: all 0,5% ease;
 }
