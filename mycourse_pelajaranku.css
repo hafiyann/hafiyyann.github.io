@@ -151,7 +151,7 @@ div{
 }
 
 .box3 {
-    display: none;
+    display: inline-block;
     background-color: white;
     width: 300px;
     height: 100px;
