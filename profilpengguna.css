@@ -32,71 +32,63 @@ div {
     width: 80px;
     height: 80px;
 }
+.namaweb{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
 
 .toggle{
     display: none;
 }
 
 .menu{
-    float: right;
-    position: relative;
-    margin: 40px 0px 40px 0px;
-    margin-right: 5%;
-}
-
-.menu ul{
-    list-style: none;
-}
-
-.menu a{
-    display: block;
-    text-decoration: none;
-    color: white;
-    width: 120px;
-    /*padding: 10px;*/ 
-}
-
-.menu ul li{
-    background-color: #001460;
-    width: 120px;
-    height: 40px;
-    line-height: 40px;
-    text-align: center;
-    display: inline-block;
-    float: left;
-    color: white;
-    font-size: 15px;
+    width: 100%;
+    margin: 35px 0px;
     box-sizing: border-box;
 }
 
-.menu ul ul{
-    display: none;
-    border:none;
+.menu ul{
+    display: flex;
+    justify-content: flex-end;
 }
 
-.menu ul ul li{
-    box-shadow: 0 10px 10px 0px rgba(0, 0, 0, 0.5);
-    font-size: 12px;
+.menu ul li{
+    list-style-type: none;
+    position: relative;
+    padding: 10px 0px;
+    box-sizing: border-box;
 }
 
-.menu a:hover{
-    background-color: #ffffff;
-    color: #001460;
-    cursor: pointer;
-    box-shadow: 0 10px 10px 0px rgba(0, 0, 0, 0.2);
-    border-radius: 7px;
+
+.menu ul li:hover{
+    border-bottom: 2px solid white;
+}
+
+
+.menu ul li a{
+    text-decoration: none;
+    padding: 0px 15px;
+    color: white;
+}
+
+
+.menu ul li ul{
+    top: 45px;
+    left: 0;
+    position: absolute;
+    background-color: #001460;
+    display: block;
+    width: 200px;
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 99;
 }
 
 .menu ul li:hover ul{
-    display: block;
-    background-color: #ffffff;
-    color: #001460;
-}
-
-.menu ul ul li:hover {
-    background-color: #ffffff;
-    color: #001460;
-    cursor: pointer;
+    opacity: 1;
+    visibility: visible;
 }
 
 .content{
@@ -294,44 +286,26 @@ label {
         display: block;
     }
 
-    .menu{
-        font-size: 20px;
-
-    }
-
+    
     .menu ul{
-        position: fixed;
-        width: 60%;
+        width: 100%;
         height: 100vh;
-        background: #001460;
-        top: 60px;
-        left: -100%;
         text-align: center;
+        position: fixed;
+        top: 60px;
+        display: block;
+        background-color: #001460;
+        left: -100%;
         transition: all .5s;
     }
 
     .menu ul li{
-        margin: 0px;
-        list-style-type: none;
         display: block;
-        padding: 0px;
     }
 
-    .menu a{
-        display: block;
-        margin: 0px auto;
+    .menu ul li ul{
         width: 100%;
-        text-decoration: none;
-        color: #ffffff;
-        padding: 10px 0px;
-        border-radius: 0px;
-        border-bottom: 2px solid white;
-    }
-
-    .menu a:hover{
-        color: #001460;
-        font-weight: bold;
-        background-color: #ffffff;
+        z-index: 1;
     }
 
     .toggle{
