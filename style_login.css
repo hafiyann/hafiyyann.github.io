@@ -13,10 +13,9 @@ body{
 }
 
 .container{
-    background-color: white;
     margin: auto;
     width: 900px;
-    height: 500x;
+    height: 500px;
     margin-top: 7.5%;
     border-radius: 25px;
 }
@@ -238,3 +237,64 @@ body{
   height: 3px;
   border: 0px;
 }
+
+
+
+@media only screen and (max-width: 900px){
+  .container{
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 60px auto;
+  }
+
+
+  .container1{
+    display: block;
+    width: 90%;
+    height: auto;
+    margin: 0px auto;
+    border-radius: 10px 10px 0px 0px;
+    float: none;
+  }
+
+  #as{
+    width: 80px;
+    height: 80px;
+  }
+
+  .container1 h1{
+    font-size: 20px;
+    box-sizing: border-box;
+  }
+
+  .container h2{
+    margin-top: 100px; 
+  }
+
+  .container2{
+    display: block;
+    width: 90%;
+    height: auto;
+    margin: 0px auto;
+    border-radius: 0px 0px 10px 10px;
+    float: none;
+    padding: 20px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
+  }
+
+
+  .container2a{
+    width: 90%;
+    height: auto;
+    margin: 0px auto;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  #username, #password{
+    width: 100%;
+  }
+
+  .masuk{
+    margin-left: 60%;
+  }
