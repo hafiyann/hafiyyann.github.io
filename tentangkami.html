@@ -12,10 +12,10 @@
 	<div class="namaweb"> 
         <img src="http://web.sman1jember.sch.id/images/LOGO-SMA-RUJUKAN-rev2-500px.png" alt="Logo SMAN 1 Jember">
         <h1>E<b>-LEARNING<br>SMAN 1 JEMBER</b></h1>
-        <!-- <div class="toggle">
+        <div class="toggle">
         	<div class="checkbtn" id="checkbtn" onclick="show()"><i class="fas fa-bars"></i></div>
         	<div class="hidebtn" id="hidebtn" onclick="hide()"><i class="fas fa-times"></i></div>
-        </div> -->
+        </div>
 	</div>
 	<div class="menu">
 		<ul>
@@ -55,18 +55,17 @@
 		xmlhttp.open("GET", "tentangkami.txt", true);
 		xmlhttp.send();
 	}
+		function show() {
+    		document.querySelector('.menu ul').style.left = 0;
+    		document.querySelector('.checkbtn').style.display = "none";
+    		document.querySelector('.hidebtn').style.display = "block";
+    	}
 
-		// function show() {
-  //   		document.querySelector('.menu ul').style.left = 0;
-  //   		document.querySelector('.checkbtn').style.display = "none";
-  //   		document.querySelector('.hidebtn').style.display = "block";
-  //   	}
-
-  //   	function hide() {
-  //   		document.querySelector('.menu ul').style.left = '-100%';
-  //   		document.querySelector('.hidebtn').style.display = "none";
-  //   		document.querySelector('.checkbtn').style.display = "block";
-  //   	}
+    	function hide() {
+    		document.querySelector('.menu ul').style.left = '-100%';
+    		document.querySelector('.hidebtn').style.display = "none";
+    		document.querySelector('.checkbtn').style.display = "block";
+    	}
 	</script>
 </body>
 </html>
