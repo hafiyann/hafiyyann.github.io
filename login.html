@@ -19,7 +19,7 @@
                 <hr>
                 <div id="error_message"></div>
                     
-                <form onsubmit="return validate()">
+                <form id="login-form" >
                     <div class="input_field">
                         <input type="text" name="username" placeholder="Masukkan Username....." id="username">
                     </div>
@@ -58,6 +58,12 @@
             document.querySelector('.bg-popup').style.display = 'none';
         });
 
+        document.getElementById('login-form').addEventListener('submit', function (event) {
+            event.preventDefault();
+            validate()
+        });
+
+
         function validate() {
             var username = document.getElementById('username').value;
             var password = document.getElementById('password').value;
@@ -87,9 +93,9 @@
                 error_message.innerHTML = text;
                 return false;
             } else if(username.length != 0 && password.length != 0){
-               alert("Form Telah Selesai Diisi")
-                return true; 
-            }       
+                alert("Form Telah Selesai Diisi")
+                window.location.href = "mycourse.html"
+            }   
         }
     </script>
 </body>
