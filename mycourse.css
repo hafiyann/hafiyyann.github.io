@@ -441,28 +441,8 @@ div{
         margin: 0px;
     }
 
-    .box_hasil{
-        float: none;
-        margin: 20px auto 10px auto;
-        display: block;
-    }
-
-    .box_jadwal{
-        float: none;
-        margin: 20px auto 10px auto;
-        display: block;
-    }
-
-    .box_pelajaran{
-        float: none;
-        margin: 20px auto 10px auto;
-        display: block;
-    }
-
-    .box_data{
-        float: none;
-        margin: 20px auto 10px auto;
-        display: block;
+    .box_menu{
+        width: 80%;
     }
 
     .dashboard2{
