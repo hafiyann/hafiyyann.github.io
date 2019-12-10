@@ -19,34 +19,32 @@ div{
 	display: inline-block;
 }
 
-.namaweb{
-    box-sizing: border-box;
-    float: left;
-    padding: 20px;
-}
-
 .namaweb h1{
     float: left;
-    padding: 10px;
-    height:80px;
-    font-size: 26px;
+    font-size: 30px;
     display: inline-block;
+    margin-left: 5px;
+    margin: 20px 0px 20px 10px;
     color: #001460;
     font-weight: normal;
-    box-sizing: border-box;
 }
 
 .namaweb img{
+    margin: 15px 30px 15px 30px;
     float: left;
     width: 80px;
     height: 80px;
 }
 
+.toggle{
+    display: none;
+}
+
 .menu{
+    float: right;
     position: relative;
     margin: 40px 0px 40px 0px;
-    margin-left: 23%;
-    /*width: 100%;*/
+    margin-right: 5%;
 }
 
 .menu ul{
@@ -122,39 +120,45 @@ div{
 }
 
 .content{
-    margin-top: 20px;
+    display: block;
     width: auto;
+    margin-top: 20px;
     background-color: white;
-    padding: 20px 100px 20px 100px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
 }
 
 .content table{
-    border-collapse: collapse;
-    border-spacing: 0px;
+    width: 1000px;
+    display: block;
+    padding: 20px;
 }
 
-#tableheader th{
-    padding: 5px 300px 5px 2px;
-    border-bottom: 3px solid #001460;
-    font-weight: bold;
-    font-size: 25px;
+tbody, thead, tr{
+    display: block;
+    width: 100%;
+}
+
+th, td{
     text-align: left;
+    width: 20%;
+    display: inline-block;
+    padding: 10px;
 }
 
-.content table td{
-    font-size: 20px;
-    padding: 8px;
+thead {
+    border-bottom: 2px solid #001460;
 }
 
-#tableheader th[id="2"]{
-    padding-right: 100px;
+#lebar{
+    width: 50%;
 }
 
-#tableheader th[id="3"]{
-    padding-right: 100px;
+.wrapper{
+    display: block;
 }
+
 
 .pilihan ul{
     list-style: none;
@@ -166,10 +170,10 @@ div{
     text-decoration: none;
     color: #001460;
     width: 120px;
-    box-shadow: 0 0px 8px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
     box-sizing: border-box;
-    border-radius: 5px;
     padding: 5px;
+    border-radius: 5px;
 }
 
 .pilihan ul ul{
@@ -179,7 +183,6 @@ div{
 
 .pilihan ul ul a{
     border-radius: 0px;
-    box-shadow: 0 0px 0px 0px rgba(0, 0, 0, 0.5);
 }
 
 .pilihan ul li:hover ul {
@@ -187,20 +190,168 @@ div{
     position: absolute;
 }
 
-/*.pilihankelas ul li:hover ul {
-    display: block;
-    position: absolute;
-}*/
-
 .pilihan ul li a:hover{
-    border-radius: 5px 5px 0px 0px;
     background-color: #001460;
     color: white;
 }
 
-.pilihan ul ul a:hover{
-    border-radius: 0px;
-    box-shadow: 0 0px 0px 0px rgba(0, 0, 0, 0.5);
+@media only screen and (max-width: 900px){
+    /*for mobile*/
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+
+    body{
+        background-size: 80%;
+    }
+
+    .namaweb{
+        width: 100%;
+        background-color: white;
+        padding: 10px;
+        box-sizing: border-box;
+        border-bottom: 5px solid #001460;
+        position: fixed;
+        top: 0px;
+    }
+
+    .namaweb h1{
+        margin: 0px;
+        font-size: 12px;
+        display: inline-block;
+        margin-left: 5px;
+        padding: 7px 0px 0px 0px;
+        color: #001460;
+        font-weight: normal;
+    }
+
+    .namaweb img{
+        margin: 0px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .toggle{
+        display: block;
+    }
+
+    .menu ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #001460;
+        top: 60px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+/*      display: none;*/
+    }
+
+    .menu ul li{
+        width: 100%;
+        height: auto;
+        line-height: 15px;
+        margin: 0px;
+        list-style-type: none;
+        display: block;
+        padding: 0px;
+        float: none;
+    }
+
+    .menu ul li a{
+        display: block;
+        margin: 0px auto;
+        width: 100%;
+        text-decoration: none;
+        color: #ffffff;
+        padding: 10px 0px;
+        border-radius: 0px;
+        border-bottom: 0.1px solid white;
+    }
+
+    .menu a:hover{
+        color: #001460;
+        font-weight: bold;
+        background-color: #ffffff;
+        border-radius: 0px;
+    }
+
+    .menu ul ul{
+        display: none;
+        border: none;
+    }
+
+    .menu ul ul li{
+        box-shadow: 0 10px 10px 0px rgba(0, 0, 0, 0.5);
+        font-size: 12px;
+        position: fixed;
+        left: 0px;
+    }
+    .menu ul li:hover ul{
+        display: block;
+        background-color: #ffffff;
+        color: #001460;
+    }
+
+    .menu ul ul li:hover {
+        background-color: #ffffff;
+        color: #001460;
+        cursor: pointer;
 }
+
+    .toggle{
+        float: right;
+    }
+
+    .checkbtn{
+        font-size: 20px;
+        color: #001460;
+        padding: 3px 5px;
+        border-radius: 3px;
+        line-height: 30px;
+        box-sizing: border-box;
+        cursor: pointer;
+        display: block;
+    }
+
+    .hidebtn{
+        display: none;
+        font-size: 20px;
+        color: #001460;
+        padding: 3px 5px;
+        border-radius: 3px;
+        line-height: 30px;
+        box-sizing: border-box;
+        cursor: pointer;
+    }
+
+    .container{
+        display: block;
+        width: 100%;
+        padding: 80px 10px 10px 10px;
+        box-sizing: border-box;
+    }
+
+    .container h1{
+        font-size: 20px;
+        margin-left: 5%;
+    }
+
+    .wrapper{
+        margin-left: 5%;
+    }
+
+    .content{
+        width: 90%;
+        overflow-x: scroll;
+        box-sizing: border-box;
+        display: block;
+        margin: 20px auto 0px auto;
+    }
+
+    .content table{
+        font-size: 15px;
+    }
 
 

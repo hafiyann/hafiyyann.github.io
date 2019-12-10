@@ -3,11 +3,18 @@
 <head>
     <title>E-LEARNING SMASa</title>
     <link rel="stylesheet" href="mycourse.css">
+    <link rel="shortcut icon" href="http://web.sman1jember.sch.id/images/LOGO-SMA-RUJUKAN-rev2-500px.png" alt="Logo SMAN 1 Jember">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 <body>
     <div class="namaweb"> 
         <img src="http://web.sman1jember.sch.id/images/LOGO-SMA-RUJUKAN-rev2-500px.png" alt="Logo SMAN 1 Jember">
         <h1>E<b>-LEARNING<br>SMAN 1 JEMBER</b></h1>
+        <div class="toggle">
+            <div class="checkbtn" id="checkbtn" onclick="show()"><i class="fas fa-bars"></i></div>
+            <div class="hidebtn" id="hidebtn" onclick="hide()"><i class="fas fa-times"></i></div>
+        </div>
 	</div>
 	<div class="menu">
 		<ul>
@@ -25,11 +32,11 @@
             <li><a href="login.html">LOGOUT</a></li>
 		</ul>
     </div>
-    <div class="dashboard">
+    <div class="dashboard clearfix">
         <div class="dashboard1">
             <h1>DASH<b>BOARD</b></h1>
             <a href="hasilbelajarku.html">
-                <div class="box_hasil">
+                <div class="box_menu">
                     <div class="gambar1">
                             <img src="SOURCE/clipboard-with-pencil-.png" alt="gambar" id="aa">
                             <h3>HASIL BELAJARKU</h3>
@@ -37,7 +44,7 @@
                 </div>
             </a>
             <a href="mycourse_jadwal.html">
-                <div class="box_jadwal">
+                <div class="box_menu">
                     <div class="gambar2">
                             <img src="SOURCE/calendar.png" alt="gambar" id="ab">
                             <h3>JADWAL</h3>
@@ -45,7 +52,7 @@
                 </div>
             </a>
             <a href="mycourse_pelajaranku.html">
-                <div class="box_pelajaran">
+                <div class="box_menu">
                     <div class="gambar3">
                         <img src="SOURCE/open-book.png" alt="gambar" id="ac">
                         <h3>PELAJARANKU</h3>
@@ -53,7 +60,7 @@
                 </div>
             </a>
             <a href="profilpengguna.html">
-                <div class="box_data">
+                <div class="box_menu">
                     <div class="gambar4">
                         <img src="SOURCE/user.png" alt="gambar" id="ad">
                         <h3>DATA DIRIKU</h3>
@@ -64,12 +71,8 @@
         <div class="dashboard2">
             <div class="headerevent">
                 <h1><b>Upcoming </b>Event</h1>
+                <a href="tambahkanevent.html" id="tambahkanevent">+</a>
             </div>
-            <a href="tambahkanevent.html">
-                <div class="tambahkanevent">
-                    <h1>+</h1>
-                </div>
-            </a>
             <div class="box1">
                 <h1><b>Matematika</b></h1>
                 <p>Ulangan Harian<br>07.00 - Senin, 09 September 2019</p>
@@ -90,5 +93,18 @@
             </div>                
         </div>
     </div>
+    <script type="text/javascript">
+        function show() {
+            document.querySelector('.menu ul').style.left = 0;
+            document.querySelector('.checkbtn').style.display = "none";
+            document.querySelector('.hidebtn').style.display = "block";
+        }
+
+        function hide() {
+            document.querySelector('.menu ul').style.left = '-100%';
+            document.querySelector('.hidebtn').style.display = "none";
+            document.querySelector('.checkbtn').style.display = "block";
+        }
+    </script>
 </body>
 </html>

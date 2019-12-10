@@ -17,34 +17,32 @@ div{
 	display: inline-block;
 }
 
-.namaweb{
-    box-sizing: border-box;
-    float: left;
-    padding: 20px;
-}
-
 .namaweb h1{
     float: left;
-    padding: 10px;
-    height:80px;
-    font-size: 26px;
+    font-size: 30px;
     display: inline-block;
+    margin-left: 5px;
+    margin: 20px 0px 20px 10px;
     color: #001460;
     font-weight: normal;
-    box-sizing: border-box;
 }
 
 .namaweb img{
+    margin: 15px 30px 15px 30px;
     float: left;
     width: 80px;
     height: 80px;
 }
 
+.toggle{
+    display: none;
+}
+
 .menu{
+    float: right;
     position: relative;
     margin: 40px 0px 40px 0px;
-    margin-left: 19%;
-    /*width: 100%;*/
+    margin-right: 5%;
 }
 
 .menu ul{
@@ -143,28 +141,146 @@ input[type=button]:hover{
     line-height: 30px;
 }
 
-/*.box2 {
-	background-color: white;
-    width: 1000px;
-    height: 100%;
-    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
-    box-sizing: border-box;
-	border-radius: 10px;
-	margin : 38px 15px 0px 15px;
-	text-align: center;
-	float: left;
-	padding: 17.5px 0px 17.5px 0px;
-}*/
-
 .box1 h1 {
 	font-size: 25px;
     font-weight: normal;
 }
 
-/*.box1 hr{
-    background-color: #001460;
-}*/
+@media only screen and (max-width: 900px){
+    /*for mobile*/
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
 
-/*.box2 h1 {
-	font-size: 27px;
-}*/
+    body{
+        background-size: 80%;
+    }
+
+    .namaweb{
+        width: 100%;
+        background-color: white;
+        padding: 10px;
+        box-sizing: border-box;
+        border-bottom: 5px solid #001460;
+        position: fixed;
+        top: 0px;
+    }
+
+    .namaweb h1{
+        margin: 0px;
+        font-size: 12px;
+        display: inline-block;
+        margin-left: 5px;
+        padding: 7px 0px 0px 0px;
+        color: #001460;
+        font-weight: normal;
+    }
+
+    .namaweb img{
+        margin: 0px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .toggle{
+        display: block;
+    }
+
+    .menu{
+        font-size: 20px;
+
+    }
+
+    .menu ul{
+        position: fixed;
+        width: 60%;
+        height: 100vh;
+        background: #001460;
+        top: 60px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+/*      display: none;*/
+    }
+
+    .menu ul li{
+        margin: 0px;
+        list-style-type: none;
+        display: block;
+        padding: 0px;
+    }
+
+    .menu a{
+        display: block;
+        margin: 0px auto;
+        width: 100%;
+        text-decoration: none;
+        color: #ffffff;
+        padding: 10px 0px;
+        border-radius: 0px;
+        border-bottom: 2px solid white;
+    }
+
+    .menu a:hover{
+        color: #001460;
+        font-weight: bold;
+        background-color: #ffffff;
+    }
+
+    .toggle{
+        float: right;
+    }
+
+    .checkbtn{
+        font-size: 20px;
+        color: #001460;
+        padding: 3px 5px;
+        border-radius: 3px;
+        line-height: 30px;
+        box-sizing: border-box;
+        cursor: pointer;
+        display: block;
+    }
+
+    .hidebtn{
+        display: none;
+        font-size: 20px;
+        color: #001460;
+        padding: 3px 5px;
+        border-radius: 3px;
+        line-height: 30px;
+        box-sizing: border-box;
+        cursor: pointer;
+    }
+
+    .dashboard{
+        padding: 10px;
+        width: 90%;
+        margin: 100px auto 0px auto;
+        display: block;
+        border-radius: 10px;
+    }
+
+    .dashboard h1{
+        font-size: 20px;
+        margin: 20px 0px 0px 20px;
+    }
+
+    .box1{
+        margin: 20px auto;
+        display: block;
+        float: none;
+        width: 90%;
+        padding: 20px;
+    }
+
+    .box1 h1{
+        margin: 0px;
+        font-size: 15px;
+    }
+
+    .box1 ul li{
+        font-size: 12px;
+        line-height: 15px;
+    }

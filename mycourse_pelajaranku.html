@@ -4,11 +4,18 @@
     <title>E-LEARNING SMASa</title>
     <link rel="stylesheet" href="mycourse_pelajaranku.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="http://web.sman1jember.sch.id/images/LOGO-SMA-RUJUKAN-rev2-500px.png" alt="Logo SMAN 1 Jember">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 <body>
     <div class="namaweb"> 
         <img src="http://web.sman1jember.sch.id/images/LOGO-SMA-RUJUKAN-rev2-500px.png" alt="Logo SMAN 1 Jember">
         <h1>E<b>-LEARNING<br>SMAN 1 JEMBER</b></h1>
+        <div class="toggle">
+            <div class="checkbtn" id="checkbtn" onclick="show()"><i class="fas fa-bars"></i></div>
+            <div class="hidebtn" id="hidebtn" onclick="hide()"><i class="fas fa-times"></i></div>
+        </div>
 	</div>
 	<div class="menu">
 		<ul>
@@ -26,7 +33,7 @@
             <li><a href="login.html">LOGOUT</a></li>
         </ul>
     </div>
-    <div class="dashboard">
+    <div class="dashboard clearfix">
         <h1><b>PELAJARAN</b>KU</h1>
         <a href="detail_pelajaran.html">
             <div class="box1">
@@ -54,16 +61,16 @@
         <div class="box1">
             <h1>PENDIDIKAN AGAMA</h1>
         </div>
-        <div class="box2">
+        <div class="box1 box2">
             <h1>PENDIDIKAN JASMANI<br>DAN OLAHRAGA</h1>
         </div>
-        <div class="box1">
+        <div class="box1 box2">
             <h1>KEWIRAUSAHAAN</h1>
         </div>
-        <div class="box1">
+        <div class="box1 box2">
             <h1>BAHASA DAERAH</h1>
         </div>
-        <div class="box2">
+        <div class="box1 box2">
             <h1>PENDIDIKAN<br>KEWARGANEGARAAN</h1>
         </div>
         <div class="btn"id="btnShow"> 
@@ -71,8 +78,7 @@
         </div>
         <div class="btn"id="btnHide"> 
               <input type="button" value="Tampilkan Lebih Sedikit"></input>
-        </div>
-         
+        </div>    
     </div>
     <script>
         $(document).ready(function(){
@@ -83,6 +89,18 @@
                 $(".box2").show(500);
             });
         });
+
+        function show() {
+            document.querySelector('.menu ul').style.left = 0;
+            document.querySelector('.checkbtn').style.display = "none";
+            document.querySelector('.hidebtn').style.display = "block";
+        }
+
+        function hide() {
+            document.querySelector('.menu ul').style.left = '-100%';
+            document.querySelector('.hidebtn').style.display = "none";
+            document.querySelector('.checkbtn').style.display = "block";
+        }
     </script>
 </body>
 </html>

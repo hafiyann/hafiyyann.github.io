@@ -3,11 +3,18 @@
 <head>
     <title>E-LEARNING SMASa</title>
     <link rel="stylesheet" href="hasilbelajarku.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="shortcut icon" href="http://web.sman1jember.sch.id/images/LOGO-SMA-RUJUKAN-rev2-500px.png" alt="Logo SMAN 1 Jember">
 </head>
 <body>
     <div class="namaweb"> 
         <img src="http://web.sman1jember.sch.id/images/LOGO-SMA-RUJUKAN-rev2-500px.png" alt="Logo SMAN 1 Jember">
         <h1>E<b>-LEARNING<br>SMAN 1 JEMBER</b></h1>
+        <div class="toggle">
+            <div class="checkbtn" id="checkbtn" onclick="show()"><i class="fas fa-bars"></i></div>
+            <div class="hidebtn" id="hidebtn" onclick="hide()"><i class="fas fa-times"></i></div>
+        </div>
 	</div>
 	<div class="menu">
 		<ul>
@@ -27,96 +34,139 @@
     </div>
     <div class="container">
         <h1>HASIL <b>BELAJARKU</b></h1>
-        <div class="pilihan">
-            <ul>
-                <li><a href="#">KELAS</a>
-                    <ul>
-                        <li><a href="hasilbelajarku.html">KELAS 10</a></li>
-                        <li><a href="hasilbelajarku.html">KELAS 11</a></li>
-                        <li><a href="hasilbelajarku.html">KELAS 12</a></li>
-                    </ul>
-                </li>
-            </ul>    
-        </div>
-        <div class="pilihan">
-            <ul>
-                <li><a href="#">SEMESTER</a>
-                    <ul>
-                        <li><a href="hasilbelajarku.html">GASAL</a></li>
-                        <li><a href="hasilbelajarku.html">GENAP</a></li>
-                    </ul>
-                </li>
-            </ul>    
+        <div class="wrapper">
+            <div class="pilihan">
+                <ul>
+                    <li><a href="#">KELAS</a>
+                        <ul>
+                            <li><a href="hasilbelajarku.html">KELAS 10</a></li>
+                            <li><a href="hasilbelajarku.html">KELAS 11</a></li>
+                            <li><a href="hasilbelajarku.html">KELAS 12</a></li>
+                        </ul>
+                    </li>
+                </ul>    
+            </div>
+            <div class="pilihan">
+                <ul>
+                    <li><a href="#">SEMESTER</a>
+                        <ul>
+                            <li><a href="hasilbelajarku.html">GASAL</a></li>
+                            <li><a href="hasilbelajarku.html">GENAP</a></li>
+                        </ul>
+                    </li>
+                </ul>    
+            </div>
         </div>
         <div class="content">
-            <table>
-                <tr id="tableheader">
-                    <th id="1">MATA PELAJARAN</th>
-                    <th id="2">NILAI</th>
-                    <th id="3">KETERANGAN</th>
-                </tr>
-                <tr>
-                    <td>MATEMATIKA</td>
-                    <td>80</td>
-                    <td>BAIK</td>
-                </tr>
-                <tr>
-                    <td>BAHASA INDONESIA</td>
-                    <td>86</td>
-                    <td>BAIK</td>
-                </tr>
-                <tr>
-                    <td>FISIKA</td>
-                    <td>90</td>
-                    <td>SANGAT BAIK</td>
-                </tr>
-                <tr>
-                    <td>BIOLOGI</td>
-                    <td>81</td>
-                    <td>BAIK</td>
-                </tr>
-                <tr>
-                    <td>KIMIA</td>
-                    <td>88</td>
-                    <td>SANGAT BAIK</td>
-                </tr>
-                <tr>
-                    <td>KEWIRAUSAHAAN</td>
-                    <td>85</td>
-                    <td>BAIK</td>
-                </tr>
-                <tr>
-                    <td>SENI BUDAYA</td>
-                    <td>85</td>
-                    <td>BAIK</td>
-                </tr>
-                <tr>
-                    <td>PENDIDIKAN AGAMA</td>
-                    <td>90</td>
-                    <td>SANGAT BAIK</td>
-                </tr>
-                <tr>
-                    <td>PENDIDIKAN JASMANI DAN OLAHRAGA</td>
-                    <td>83</td>
-                    <td>BAIK</td>
-                </tr>
-                <tr>
-                    <td>PENDIDIKAN KEWARGANEGRAAN</td>
-                    <td>88</td>
-                    <td>SANGAT BAIK</td>
-                </tr>
-                <tr>
-                    <td>BAHASA INGGRIS</td>
-                    <td>90</td>
-                    <td>SANGAT BAIK</td>
-                </tr>
-                <tr>
-                    <td>BAHASA DAERAH</td>
-                    <td>85</td>
-                    <td>SANGAT BAIK</td>
-                </tr>
+            <table id="tabelnilai">
+                <thead>
+                    <tr>
+                        <th id="lebar">MATA PELAJARAN</th>
+                        <th>NILAI</th>
+                        <th>KETERANGAN</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id="lebar">MATEMATIKA</td>
+                        <td>80</td>
+                        <td>BAIK</td>
+                    </tr>
+                    <tr>
+                        <td id="lebar">BAHASA INDONESIA</td>
+                        <td>86</td>
+                        <td>BAIK</td>
+                    </tr>
+                    <tr>
+                        <td id="lebar">FISIKA</td>
+                        <td>90</td>
+                        <td>SANGAT BAIK</td>
+                    </tr>
+                    <tr>
+                        <td id="lebar">BIOLOGI</td>
+                        <td>81</td>
+                        <td>BAIK</td>
+                    </tr>
+                    <tr>
+                        <td id="lebar">KIMIA</td>
+                        <td>88</td>
+                        <td>SANGAT BAIK</td>
+                    </tr>
+                    <tr>
+                        <td id="lebar">KEWIRAUSAHAAN</td>
+                        <td>85</td>
+                        <td>BAIK</td>
+                    </tr>
+                    <tr>
+                        <td id="lebar">SENI BUDAYA</td>
+                        <td>85</td>
+                        <td>BAIK</td>
+                    </tr>
+                    <tr>
+                        <td id="lebar">PENDIDIKAN AGAMA</td>
+                        <td>90</td>
+                        <td>SANGAT BAIK</td>
+                    </tr>
+                    <tr>
+                        <td id="lebar">PENDIDIKAN JASMANI DAN OLAHRAGA</td>
+                        <td>83</td>
+                        <td>BAIK</td>
+                    </tr>
+                    <tr>
+                        <td id="lebar">PENDIDIKAN KEWARGANEGRAAN</td>
+                        <td>88</td>
+                        <td>SANGAT BAIK</td>
+                    </tr>
+                    <tr>
+                        <td id="lebar">BAHASA INGGRIS</td>
+                        <td>90</td>
+                        <td>SANGAT BAIK</td>
+                    </tr>
+                    <tr>
+                        <td id="lebar">BAHASA DAERAH</td>
+                        <td>85</td>
+                        <td>SANGAT BAIK</td>
+                    </tr>    
+                </tbody>
             </table>
         </div>
-    </div> 
+    </div>
+    <script type="text/javascript">
+        function show() {
+            document.querySelector('.menu ul').style.left = 0;
+            document.querySelector('.checkbtn').style.display = "none";
+            document.querySelector('.hidebtn').style.display = "block";
+        }
+
+        function hide() {
+            document.querySelector('.menu ul').style.left = '-100%';
+            document.querySelector('.hidebtn').style.display = "none";
+            document.querySelector('.checkbtn').style.display = "block";
+        }
+    </script>
+    <script type="text/javascript">
+        const nilaibody = document.querySelector("#tabelnilai > tbody");
+
+
+        function loadNilai() {
+            const request = new XMLHttpRequest();
+
+            request.open("get","hasilbelajarku.json");
+            request.onload = () => {
+                try{
+                    const jsonfile = JSON.parse(request.responseText);
+                    populateNilai(jsonfile);
+                } catch (e) {
+                    console.warn("Nilai tidak dapat dimuat");
+                }
+            };
+
+            request.send();
+        }
+
+        function populateNilai(jsonfile){
+            console.log(jsonfile);
+        }
+    </script>
 </body>
 </html>

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
 *{
     margin: 0px;
     padding: 0px;
@@ -16,34 +18,32 @@ div{
 	display: inline-block;
 }
 
-.namaweb{
-    box-sizing: border-box;
-    float: left;
-    padding: 20px;
-}
-
 .namaweb h1{
     float: left;
-    padding: 10px;
-    height:80px;
-    font-size: 26px;
+    font-size: 30px;
     display: inline-block;
+    margin-left: 5px;
+    margin: 20px 0px 20px 10px;
     color: #001460;
     font-weight: normal;
-    box-sizing: border-box;
 }
 
 .namaweb img{
+    margin: 15px 30px 15px 30px;
     float: left;
     width: 80px;
     height: 80px;
 }
 
+.toggle{
+    display: none;
+}
+
 .menu{
+    float: right;
     position: relative;
     margin: 40px 0px 40px 0px;
-    margin-left: 23%;
-    /*width: 100%;*/
+    margin-right: 5%;
 }
 
 .menu ul{
@@ -101,67 +101,47 @@ div{
     cursor: pointer;
 }
 
-
-.content {
-	display: inline-block;
-	width: 400px;
-	margin: 80px 0px 0px 40px;
-	background-color: #e6e7eb;
-	color: #001460;
-	padding: 10px;
-	border-left: 6px solid #001460;
-	border-radius: 0px 10px 10px 0px;
-}
-
-.content a{
-	display: block;
-	width: 110px;
-	padding: 10px 12px;
-	color: #ffffff;
-	text-align: left;
-	text-decoration: none;
-	background-color: #001460;
-	border-radius: 5px;
-}
-
-input[type=button]:hover{
-	color: #050766;
-	cursor: pointer;
-	font-weight: bold;
-	background-color: #ffffff;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+.dashboard{
+    width: 100%;
+    padding: 5% 5%;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.75);
 }
 
 .dashboard1{
-    float: left;
-    background-color: rgba(255, 255, 255, 0.75);
-    width: 600px;
-    height: 460px;
+    background-color: white;
+    width: 650px;
+    height: auto;
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
-    padding: auto;
-    margin: 8px 0px 0px 30px;
+    padding: 20px;
+    margin-right: 10%;
     box-sizing: border-box;
     border-radius: 10px;
+    float: left;
 }
 
 .dashboard1 h1{
     font-weight: normal;
     color: #001460;
-    margin: 20px 0px 0px 20px;
+    margin: 20px 20px;
     font-size: 40px;
 }
 
-.box_hasil{
+.dashboard1 a{
+    text-decoration: none;
+}
+
+.box_menu{
     box-sizing: border-box;
     background-color: #25255f;
     width: 250px;
     height: 150px;
-    padding: 7px;
+    padding: 10px;
     border-radius: 30px;
-    margin: 25px 50px auto 24px;
-    float: left;
+    margin: 25px;
     text-align: center;
     color: white;
+    display: inline-block;
 }
 
 .gambar1 img{
@@ -171,37 +151,11 @@ input[type=button]:hover{
     display: inline-block;
 }
 
-.box_jadwal {
-    box-sizing: border-box;
-    background-color: #25255f;
-    width: 250px;
-    height: 150px;
-    padding: 7px;
-    border-radius: 30px;
-    display: inline-block;
-    margin: 25px auto 18px auto;
-    text-align: center;
-    color: white;
-}
-
 .gambar2 img{
     width: 70px;
     height: 70px;
     margin: 20px 15px 0px 20px;
     display: inline-block;
-}
-
-.box_pelajaran {
-    box-sizing: border-box;
-    background-color: #25255f;
-    width: 250px;
-    height: 150px;
-    padding: 7px;
-    border-radius: 30px;
-    margin: 25px 50px auto 24px;
-    color: white;
-    text-align: center;
-    float: left;
 }
 
 .gambar3 img{
@@ -211,19 +165,6 @@ input[type=button]:hover{
     display: inline-block;
 }
 
-.box_data {
-    box-sizing: border-box;
-    background-color: #25255f;
-    width: 250px;
-    height: 150px;
-    padding: 7px;
-    border-radius: 30px;
-    display: inline-block;
-    margin: 25px auto 30px auto;
-    text-align: center;
-    color: white
-}
-
 .gambar4 img{
     width: 70px;
     height: 70px;
@@ -231,56 +172,51 @@ input[type=button]:hover{
     display: inline-block;
 }
 
-.box_data:hover {
-    background-color: #34ebcc;
-}
-
-.box_pelajaran:hover {
-    background-color: #34ebcc;
-}
-
-.box_hasil:hover {
-    background-color: #34ebcc;
-}
-
-.box_jadwal:hover {
+.box_menu:hover {
     background-color: #34ebcc;
 }
 
 .dashboard2 {
-    
     box-sizing: border-box;
-    background-color: rgba(255, 255, 255, 0.75);
+    background-color: white;
     width: 500px;
-    height: 225px;
+    height: auto;
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
     padding: 10px 20px 20px 20px;
-    margin: 8px 40px 0px 5px;
     box-sizing: border-box;
     border-radius: 10px;
-    float: right;
+    float: left;
 }
+
+.headerevent{
+    display: block;
+    position: relative;
+}
+
 .headerevent h1 {
     font-weight: normal;
     color: #001460;
     font-size: 29px;
-    display: inline-block;
-    margin-right: 190px;
-}
-
-.tambahkanevent h1{
-    background-color: white;
-    color: #001460;
-    padding: 5px 14px 5px 14px;
-    border-radius: 50%;
     margin: 0px;
 }
 
-.dashboard2 a: hover{
+.headerevent a{
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: white;
+    text-decoration: none;
+    font-size: 29px;
+    background-color: #001460;
+    padding: 0px 8px 0px 8px;
+    border-radius: 50%;
+}
+
+/*.dashboard2 a: hover{
     background-color: #001460;
     color: white;
 }
-
+*/
 .box1{
     box-sizing: border-box;
     background-color: #ffffff;
@@ -325,15 +261,15 @@ input[type=button]:hover{
 
 .dashboard3 {
     box-sizing: border-box;
-    background-color: rgba(255, 255, 255, 0.75);
+    background-color: white;
     width: 500px;
-    height: 225px;
+    height: auto;
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
-    margin: 10px 40px 0px 5px;
     padding: 10px 20px 20px 20px;
+    margin-top: 20px;
     box-sizing: border-box;
     border-radius: 10px;
-    float: right;
+    float: left;
 }
 
 .dashboard3 h1 {
@@ -373,4 +309,209 @@ input[type=button]:hover{
 
 .box4 h1 {
     font-size: 19px;
+}
+
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+@media only screen and (max-width: 900px){
+    /*for mobile*/
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+
+    body{
+        background-size: 80%;
+    }
+
+    .namaweb{
+        width: 100%;
+        background-color: white;
+        float: left;
+        padding: 10px;
+        box-sizing: border-box;
+        border-bottom: 5px solid #001460;
+        position: fixed;
+        z-index: 99999;
+    }
+
+    .namaweb h1{
+        margin: 0px;
+        font-size: 12px;
+        display: inline-block;
+        margin-left: 5px;
+        padding: 7px 0px 0px 0px;
+        color: #001460;
+        font-weight: normal;
+    }
+
+    .namaweb img{
+        margin: 0px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .toggle{
+        display: block;
+    }
+
+    .menu{
+        font-size: 20px;
+
+    }
+
+    .menu ul{
+        position: fixed;
+        width: 60%;
+        height: 100vh;
+        background: #001460;
+        top: 60px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+/*      display: none;*/
+    }
+
+    .menu ul li{
+        margin: 0px;
+        list-style-type: none;
+        display: block;
+        padding: 0px;
+    }
+
+    .menu a{
+        display: block;
+        margin: 0px auto;
+        width: 100%;
+        text-decoration: none;
+        color: #ffffff;
+        padding: 10px 0px;
+        border-radius: 0px;
+        border-bottom: 2px solid white;
+    }
+
+    .menu a:hover{
+        color: #001460;
+        font-weight: bold;
+        background-color: #ffffff;
+    }
+
+    .toggle{
+        float: right;
+    }
+
+    .checkbtn{
+        font-size: 20px;
+        color: #001460;
+        padding: 3px 5px;
+        border-radius: 3px;
+        line-height: 30px;
+        box-sizing: border-box;
+        cursor: pointer;
+        display: block;
+    }
+
+    .hidebtn{
+        display: none;
+        font-size: 20px;
+        color: #001460;
+        padding: 3px 5px;
+        border-radius: 3px;
+        line-height: 30px;
+        box-sizing: border-box;
+        cursor: pointer;
+    }
+
+    .dashboard1 {
+        margin: 0px auto 20px auto;
+        float: none;
+        display: block;
+        width: 80%;
+        padding: 20px;
+        height: auto;
+    }
+
+    .dashboard1 h1{
+        float: none;
+        display: block;
+        margin: 0px;
+    }
+
+    .box_hasil{
+        float: none;
+        margin: 20px auto 10px auto;
+        display: block;
+    }
+
+    .box_jadwal{
+        float: none;
+        margin: 20px auto 10px auto;
+        display: block;
+    }
+
+    .box_pelajaran{
+        float: none;
+        margin: 20px auto 10px auto;
+        display: block;
+    }
+
+    .box_data{
+        float: none;
+        margin: 20px auto 10px auto;
+        display: block;
+    }
+
+    .dashboard2{
+        float: none;
+        display: block;
+        height: auto;
+        width: 80%;
+        margin: 20px auto 20px auto;
+    }
+
+    .headerevent{
+        display: block;
+    }
+
+    .headerevent h1{
+        margin: 0px;
+    }
+
+    .headerevent a{
+        float: right;
+        color: white;
+        text-decoration: none;
+        font-size: 29px;
+        background-color: #001460;
+        padding: 0px 8px 0px 8px;
+        border-radius: 50%;
+    }
+
+    .box1{
+        width: 100%;
+    }
+
+    .box2{
+        width: 100%;
+    }
+
+    .dashboard3{
+        float: none;
+        display: block;
+        height: auto;
+        width: 80%;
+        margin: 20px auto 20px auto;
+    }
+
+    .box3{
+        width: 100%;
+    }
+
+    .box4{
+        width: 100%;
+    }
 }

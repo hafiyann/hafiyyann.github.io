@@ -17,34 +17,32 @@ div{
 	display: inline-block;
 }
 
-.namaweb{
-    box-sizing: border-box;
-    float: left;
-    padding: 20px;
-}
-
 .namaweb h1{
     float: left;
-    padding: 10px;
-    height:80px;
-    font-size: 26px;
+    font-size: 30px;
     display: inline-block;
+    margin-left: 5px;
+    margin: 20px 0px 20px 10px;
     color: #001460;
     font-weight: normal;
-    box-sizing: border-box;
 }
 
 .namaweb img{
+    margin: 15px 30px 15px 30px;
     float: left;
     width: 80px;
     height: 80px;
 }
 
+.toggle{
+    display: none;
+}
+
 .menu{
+    float: right;
     position: relative;
     margin: 40px 0px 40px 0px;
-    margin-left: 23%;
-    /*width: 100%;*/
+    margin-right: 5%;
 }
 
 .menu ul{
@@ -103,11 +101,12 @@ div{
 }
 
 .dashboard{
+    display: block;
 	background-color: rgba(255, 255, 255, 0.75);
 	margin: 10px 0px 0px 0px;
-	padding: 20px 100px 100px 120px;
+	padding: 20px 50px 10px 50px;
     width: auto;
-    height: 100%;
+    height: auto;
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
     box-sizing: border-box;
 }
@@ -118,10 +117,16 @@ div{
 	font-size: 40px;
 }
 
-.box1 h1:hover {
+.dashboard a {
+    text-decoration: none;
+}
+
+.box1:hover{
     background-color: #001460;
+}
+
+.box1:hover > h1 {
     color: white;
-    border-radius: 10px;
 }
 
 .box1 {
@@ -132,60 +137,207 @@ div{
     box-sizing: border-box;
 	border-radius: 10px;
 	margin : 38px 15px 0 15px;
-	text-align: center;
-	float: left;
-}
-
-.box2 {
-    display: inline-block;
-	background-color: white;
-    width: 300px;
-    height: 100px;
-    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
-    box-sizing: border-box;
-	border-radius: 10px;
-	margin : 38px 15px 0px 15px;
-	text-align: center;
-	float: left;
-	padding: 17.5px 0px 17.5px 0px;
-}
-
-.box3 {
-    display: inline-block;
-    background-color: white;
-    width: 300px;
-    height: 100px;
-    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
-    box-sizing: border-box;
-    border-radius: 10px;
-    margin : 38px 15px 0px 15px;
     text-align: center;
     float: left;
-    padding: 17.5px 0px 17.5px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
-.box1 h1 {
-	font-size: 25px;
-	line-height: 100px;
-}
-
-.box2 h1 {
-	font-size: 27px;
-}
-
-.box3 h1 {
-    font-size: 27px;
+.box1 h1{
+    font-size: 25px;
 }
 
 .btn input[type=button] {
-    margin: 75px 100px;
+    display: block;
+    margin: 20px 0px 20px 20px;
     border-radius: 5px;
     border: 0px;
-    padding: 9px;
-    width: 120px;
+    padding: 10px;
+    width: auto;
     background-color: #001460;
-    font-family: roboto;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     color: white;
     font-size: 10px;
+}
+
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+@media only screen and (max-width: 900px){
+    /*for mobile*/
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+
+    body{
+        background-size: 80%;
+    }
+
+    .namaweb{
+        width: 100%;
+        background-color: white;
+        padding: 10px;
+        box-sizing: border-box;
+        border-bottom: 5px solid #001460;
+        position: fixed;
+        top: 0px;
+    }
+
+    .namaweb h1{
+        margin: 0px;
+        font-size: 12px;
+        display: inline-block;
+        margin-left: 5px;
+        padding: 7px 0px 0px 0px;
+        color: #001460;
+        font-weight: normal;
+    }
+
+    .namaweb img{
+        margin: 0px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .toggle{
+        display: block;
+    }
+
+    .menu{
+        font-size: 20px;
+
+    }
+
+    .menu ul{
+        position: fixed;
+        width: 60%;
+        height: 100vh;
+        background: #001460;
+        top: 60px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+/*      display: none;*/
+    }
+
+    .menu ul li{
+        margin: 0px;
+        list-style-type: none;
+        display: block;
+        padding: 0px;
+    }
+
+    .menu a{
+        display: block;
+        margin: 0px auto;
+        width: 100%;
+        text-decoration: none;
+        color: #ffffff;
+        padding: 10px 0px;
+        border-radius: 0px;
+        border-bottom: 2px solid white;
+    }
+
+    .menu a:hover{
+        color: #001460;
+        font-weight: bold;
+        background-color: #ffffff;
+    }
+
+    .toggle{
+        float: right;
+    }
+
+    .checkbtn{
+        font-size: 20px;
+        color: #001460;
+        padding: 3px 5px;
+        border-radius: 3px;
+        line-height: 30px;
+        box-sizing: border-box;
+        cursor: pointer;
+        display: block;
+    }
+
+    .hidebtn{
+        display: none;
+        font-size: 20px;
+        color: #001460;
+        padding: 3px 5px;
+        border-radius: 3px;
+        line-height: 30px;
+        box-sizing: border-box;
+        cursor: pointer;
+    }
+
+    .dashboard{
+        width: 80%;
+        display: block;
+        padding: 10px;
+        margin: 100px auto 10px auto;
+        border-radius: 10px;
+    }
+
+    .dashboard h1{
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .dashboard a{
+        text-decoration: none;
+    }
+
+    .box1{
+        width: 80%;
+        height: auto;
+        display: block;
+        margin: 10px auto 20px auto;
+        font-size: 20px;
+        float: none;
+        text-decoration: none;
+        padding: 17.5px 0px 17.5px 0px;
+
+    }
+
+    .box1 h1{
+        line-height: 24px;
+        margin: 0px;
+    }
+
+    .box2{
+        width: 80%;
+        height: auto;
+        display: block;
+        margin: 10px auto 20px auto;
+        font-size: 20px;
+        float: none;
+        text-decoration: none;
+    }
+
+    .box2 h1{
+        margin: 0px;
+    }
+
+    .btn{
+        display: block;
+        margin: 10px 0px 10px 0px;
+    }
+
+    .btn input[type=button] {
+        display: block;
+        margin: 0px auto 0px auto;
+        border-radius: 5px;
+        padding: 10px;
+        width: auto;
+        background-color: #001460;
+        box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 8px 0 rgba(0, 0, 0, 0.19);
+        color: white;
+        font-size: 10px;
+        float: none;
 }
