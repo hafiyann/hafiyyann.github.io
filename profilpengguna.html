@@ -92,19 +92,22 @@
 	}
 
 	document.getElementById('ubahpassword').addEventListener('click',function(){
-		document.querySelector('.bg-popup').style.display = 'flex';
+		document.querySelector('.bg-popup').style.top = '0';
+		document.querySelector('')
 	});
+
+
 	document.getElementById('ubah').addEventListener('click',function(event){
 		event.preventDefault()
 		if (validate()){
 			bersihkanForm()
-			document.querySelector('.bg-popup').style.display = 'none';
+			document.querySelector('.bg-popup').style.top = '-100%';
 
 		}
 	});
 	document.getElementById('batal').addEventListener('click',function(){
 		bersihkanForm()
-		document.querySelector('.bg-popup').style.display = 'none';
+		document.querySelector('.bg-popup').style.top = '-100%';
 	});
 
 	const input = document.getElementById("ubahfoto");
