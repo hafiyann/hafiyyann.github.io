@@ -101,6 +101,7 @@ div{
     height: auto;
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
     box-sizing: border-box;
+    position: relative;
 }
 
 .dashboard h1 {
@@ -135,6 +136,13 @@ div{
     justify-content: center;
     align-items: center;
 
+}
+
+.pembungkus {
+    position: absolute;
+    left: -100%;
+    transition: all .5s;
+    visibility: visible;
 }
 
 .box1 h1{
@@ -291,6 +299,7 @@ div{
         font-size: 20px;
         float: none;
         text-decoration: none;
+        position: relative;
     }
 
     .box2 h1{
